@@ -1,7 +1,6 @@
-# Hamel_Maik_-Vengence-
+# Hamel*Maik*-Vengence-
 
 ![](Assets/images/Logo.png)
-
 
 [devloppement web - Vous êtes le héro](https://smnarnold.com/projets/vous-etes-le-heros)
 
@@ -12,4 +11,5 @@
 **Palette de couleur:** [coolors.co](https://coolors.co/060913-35355f-f0e5fa-33424d-fae0f4-d7ddea-524459)
 
 ## Diagramme
+
 ![](Assets/images/schemat.png)
