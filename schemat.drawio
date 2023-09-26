@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="wQcZCOaijW5SIlA2i32u" name="Page-1">
-        <mxGraphModel dx="2128" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1155" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -188,10 +188,10 @@
                 <mxCell id="75" value="&lt;h1&gt;Questions&lt;/h1&gt;&lt;p&gt;&lt;b&gt;Genre:&amp;nbsp; Aventure, Fantasy&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Inspiration: Par moi même ( avec un petit peu d'inspiration de la série The Dragon Prince )&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Nom: Vengeance&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Palette:&amp;nbsp;&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;couleur de fond&amp;nbsp; du site: #060913&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;couleur de fond du contenu: #35355F&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;couleur de la police: #F0E5FA&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;couleur de fond des boutons: #33424D&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;couleur de fond des boutons en hover:&amp;nbsp; #FAE0F4&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;couleur de la police des boutons: #D7DDEA&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;couleur de la police des boutons en hover: #524459&lt;/b&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="-380" y="50" width="320" height="380" as="geometry"/>
                 </mxCell>
-                <mxCell id="80" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;" edge="1" parent="1" source="77" target="72">
+                <mxCell id="80" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;" parent="1" source="77" target="72" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="77" value="Vous décidez d'entrer à l'intérieur de la taverne" style="rounded=1;whiteSpace=wrap;html=1;labelBorderColor=none;labelBackgroundColor=none;fillColor=none;fontColor=#000000;strokeColor=#000000;strokeWidth=3;" vertex="1" parent="1">
+                <mxCell id="77" value="Vous décidez d'entrer à l'intérieur de la taverne" style="rounded=1;whiteSpace=wrap;html=1;labelBorderColor=none;labelBackgroundColor=none;fillColor=none;fontColor=#000000;strokeColor=#000000;strokeWidth=3;" parent="1" vertex="1">
                     <mxGeometry x="29.70000000000005" y="540" width="130" height="70" as="geometry"/>
                 </mxCell>
             </root>
