@@ -22,4 +22,6 @@ let chapters = {
     image: "",
     boutons: [],
   },
+
+  comptoir: {},
 };
