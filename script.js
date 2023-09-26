@@ -66,7 +66,7 @@ let chapters = {
   echec: {
     titre: "L'enprisonnement",
     description:
-      "N'ayant pas d'arme pour le tuer, le roi appelle ses gardes et vous emprisonne a vie",
+      "N'ayant pas d'arme pour le tuer, le roi appelle ses gardes et vous emprisonne pour le reste de votre vie",
     image: "",
     boutons: [],
   },
