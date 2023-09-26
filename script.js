@@ -23,5 +23,59 @@ let chapters = {
     boutons: [],
   },
 
-  comptoir: {},
+  comptoir: {
+    titre: "Au comptoir",
+    description:
+      "Après, vous décider d'aller vers le comptoir du bar. Au comptoir, vous voyez qu'un soldat, au regard intimidant, est assit à coté de vous. Vous hesiter entre l'intimider pour montrer votre dominance et avoir de l'information ou lui parler poliment pour avoir de l'information",
+    image: "",
+    boutons: [],
+  },
+
+  intimidation: {
+    titre: "Trop de surestimation",
+    description:
+      "Prenant vos insultes personnel, il décide de vous étrangler jusqu'à votre mort",
+    image: "",
+    boutons: [],
+  },
+
+  informations: {
+    titre: "L'information du soldat",
+    description:
+      "Il vous répond calmement que celui-ci sait seulement que le roi est présentement dans le chateau. Vous décidez donc d'aller au château. AU chateau, vous entendez que le roi est dans sa chambre",
+    image: "",
+    boutons: [],
+  },
+
+  soldat: {
+    titre: "Exploration du château",
+    description:
+      "En décidant de vous d'explorer les intérieurs du château avant d'aller dans la chambre du roi, vous croisez in soldat qui vous pose beaucoup de questions. Cependant vous hésitez à plusieurs de ses questions. par panique vous essayer de vous enfuir, mais il vous rattrappe et vous emprisonne.",
+    image: "",
+    boutons: [],
+  },
+
+  chambre: {
+    titre: "Arrivé à la chambre",
+    description:
+      "Arrivé à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
+    image: "",
+    boutons: [],
+  },
+
+  echec: {
+    titre: "L'enprisonnement",
+    description:
+      "N'ayant pas d'arme pour le tuer, le roi appelle ses gardes et vous emprisonne a vie",
+    image: "",
+    boutons: [],
+  },
+
+  reussite: {
+    titre: "L'heure de la vengence",
+    description:
+      "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder le coeur. Après vous vous enfuyez, satisfaite de votre vengence",
+    image: "",
+    boutons: [],
+  },
 };
