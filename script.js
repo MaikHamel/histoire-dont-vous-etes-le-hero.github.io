@@ -93,3 +93,17 @@ let chapters = {
     image: "",
   },
 };
+
+let goTochapter = function (chapters) {
+  if (goTochapter == chapters) {
+    console.log(
+      `${chapters.titre} ${chapters.description} ${chapters.boutons}`
+    );
+  } else {
+    console.log("mauvais cle de chapitre chapitre");
+  }
+};
+
+window.addEventListener("load", function (chapters) {
+  console.log(`${chapters.debut}`);
+});
