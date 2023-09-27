@@ -94,16 +94,28 @@ let chapters = {
   },
 };
 
-let goTochapter = function (chapters) {
-  if (goTochapter == chapters) {
-    console.log(
-      `${chapters.titre} ${chapters.description} ${chapters.boutons}`
-    );
+let goTochapter = function (chapitre) {
+  if (chapters[chapitre]) {
+    console.log(chapters[chapitre].titre);
+    console.log(chapters[chapitre].description);
+    /*console.log("choix: ");
+    for (const i in chapters[chapitre].boutons) {
+      console.log(
+        `${chapters[chapitre].boutons[i].titre} \n ${chapters[chapitre].boutons[i].destination}`
+      );
+    }*/
+    console.log(chapters[chapitre].boutons[0]);
+    console.log(chapters[chapitre].boutons[1]);
   } else {
     console.log("mauvais cle de chapitre chapitre");
   }
 };
 
-window.addEventListener("load", function (chapters) {
-  console.log(`${chapters.debut}`);
-});
+goTochapter("debut");
+
+/*window.addEventListener("load", function () {
+  console.log(chapters.debut.titre);
+  console.log(chapters.debut.description);
+  console.log(chapters.debut.boutons[0]);
+  console.log(chapters.debut.boutons[1]);
+});*/
