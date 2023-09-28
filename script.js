@@ -91,6 +91,7 @@ let chapters = {
     description:
       "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder la poitrine. Après, vous vous enfuyez, satisfaite de votre vengence",
     image: "",
+    boutons: [{ titre: "recomencer", destination: "debut" }],
   },
 };
 
