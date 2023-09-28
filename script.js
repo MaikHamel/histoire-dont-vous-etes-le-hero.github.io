@@ -55,7 +55,7 @@ let chapters = {
     image: "",
     boutons: [
       { titre: "Aller vers la chambre", destination: "chambre" },
-      { titre: "Explorer le château", destination: "soldats" },
+      { titre: "Explorer le château", destination: "soldat" },
     ],
   },
 
