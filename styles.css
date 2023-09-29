@@ -86,9 +86,7 @@ body {
   align-items: center;
 }
 
-.bouton1,
-.bouton2,
-.bouton3 {
+button {
   width: 20vh;
   height: 4vh;
   background-color: #33424d;
@@ -99,9 +97,7 @@ body {
   color: #d7ddea;
 }
 
-.bouton1:hover,
-.bouton2:hover,
-.bouton3:hover {
+button:hover {
   background-color: #fae0f4;
   color: #524459;
 }
@@ -133,9 +129,8 @@ body {
   .titre {
     font-size: 20px;
   }
-  .bouton1,
-  .bouton2,
-  .bouton3 {
+
+  button {
     display: block;
   }
 }

@@ -95,13 +95,22 @@ let chapters = {
   },
 };
 
+let titre = document.querySelector(".titre");
+let description = document.querySelector(".paragraphe");
+
 let goTochapter = function (chapitre) {
   if (chapters[chapitre]) {
-    console.log(chapters[chapitre].titre);
-    console.log(chapters[chapitre].description);
+    titre.innerHTML = chapters[chapitre].titre;
+    /*console.log(chapters[chapitre].titre);*/
+    description.innerHTML = chapters[chapitre].description;
+    /*console.log(chapters[chapitre].description);*/
 
     console.log("options: ");
+    const boutonenlever = document.querySelector(".option");
+    boutonenlever.parentNode.removeChild(boutonenlever);
+
     for (let i = 0; i < chapters[chapitre].boutons.length; i++) {
+      creerbouton = s;
       console.log(
         `${chapters[chapitre].boutons[i].titre} => goTochapter("${chapters[chapitre].boutons[i].destination}")`
       );
