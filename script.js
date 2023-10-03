@@ -99,7 +99,7 @@ let titre = document.querySelector(".titre");
 let description = document.querySelector(".paragraphe");
 let images = document.querySelector(".image");
 
-let goTochapter = function (chapitre) {
+let goToChapter = function (chapitre) {
   if (chapters[chapitre]) {
     titre.innerHTML = chapters[chapitre].titre;
     /*console.log(chapters[chapitre].titre);*/
@@ -110,10 +110,10 @@ let goTochapter = function (chapitre) {
     /*console.log("options: ");
     const boutonenlever = document.querySelector(".option");
     boutonenlever.parentNode.removeChild(boutonenlever);*/
-    const bouton = document.querySelector(".option");
+    const containerbouton = document.querySelector(".option");
 
-    while (bouton.firstChild) {
-      bouton.removeChild(bouton.firstChild);
+    while (containerbouton.firstChild) {
+      containerbouton.removeChild(containerbouton.firstChild);
     }
 
     for (let i = 0; i < chapters[chapitre].boutons.length; i++) {
@@ -124,7 +124,7 @@ let goTochapter = function (chapitre) {
 
         goToChapter(chapters[chapitre].boutons[i].destination);
       });
-      bouton.appendChild(creerbouton);
+      containerbouton.appendChild(creerbouton);
 
       /*creerbouton = console.log(
         `${chapters[chapitre].boutons[i].titre} => goTochapter("${chapters[chapitre].boutons[i].destination}")`
@@ -137,7 +137,7 @@ let goTochapter = function (chapitre) {
   }
 };
 
-goTochapter("debut");
+goToChapter("debut");
 
 /*window.addEventListener("load", function () {
   console.log(chapters.debut.titre);
@@ -158,7 +158,7 @@ goTochapter("debut");
 
 // Sélectionne le div .boutons
 
-const boutons = document.querySelector(".boutons");
+/*const boutons = document.querySelector(".boutons");
 
 // Supprime tous les boutons enfants du div .boutons
 
@@ -188,4 +188,4 @@ for (let i = 0; i < chapitre.boutons.length; i++) {
   // enfin, on ajoute le bouton dans la page Web (dans le DOM)
 
   boutons.appendChild(nouveauBtn);
-}
+}*/
