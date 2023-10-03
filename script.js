@@ -95,6 +95,11 @@ let chapters = {
   },
 };
 
+let bouton1 = chapters.entrer.boutons[0];
+let bouton2 = chapters.entrer.boutons[1];
+let bouton3 = chapters.chambre.boutons[0];
+let bouton4 = chapters.chambre.boutons[1];
+
 let titre = document.querySelector(".titre");
 let description = document.querySelector(".paragraphe");
 let images = document.querySelector(".image");
@@ -106,6 +111,28 @@ let goToChapter = function (chapitre) {
     description.innerHTML = chapters[chapitre].description;
     /*console.log(chapters[chapitre].description);*/
     images.src = chapters[chapitre].image;
+    let twist = false;
+    if (bouton1.onclick == true) {
+      twist = true;
+    }
+
+    if (bouton2.onclick == true) {
+      twist = false;
+    }
+
+    if (twist == true) {
+      bouton4.disabled == true;
+    }
+
+    if (twist == true) {
+      bouton3.disabled == true;
+    }
+
+    /*if ((twist = true == true)) {
+      chapters[chapitre[7]].boutons[i].disabled == true;
+    } else {
+      chapters[chapitre[7]].boutons[i].disabled == true;
+    }*/
 
     /*console.log("options: ");
     const boutonenlever = document.querySelector(".option");
