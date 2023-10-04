@@ -1,3 +1,4 @@
+// chapitres
 let chapters = {
   debut: {
     titre: "intro",
@@ -105,9 +106,7 @@ let chapters = {
   },
 };
 
-let bouton3 = chapters.chambre.boutons[0];
-let bouton4 = chapters.chambre.boutons[1];
-
+// placemnets des informations dans javascript
 let titre = document.querySelector(".titre");
 let description = document.querySelector(".paragraphe");
 let images = document.querySelector(".image");
@@ -115,10 +114,12 @@ let images = document.querySelector(".image");
 let goToChapter = function (chapitre) {
   if (chapters[chapitre]) {
     titre.innerHTML = chapters[chapitre].titre;
-    /*console.log(chapters[chapitre].titre);*/
+
     description.innerHTML = chapters[chapitre].description;
-    /*console.log(chapters[chapitre].description);*/
+
     images.src = chapters[chapitre].image;
+
+    //twist
 
     let twist = false;
     if (chapters[chapitre] == chapters.arme) {
@@ -147,15 +148,7 @@ let goToChapter = function (chapitre) {
       }
     }
 
-    /*if ((twist = true == true)) {
-      chapters[chapitre[7]].boutons[i].disabled == true;
-    } else {
-      chapters[chapitre[7]].boutons[i].disabled == true;
-    }*/
-
-    /*console.log("options: ");
-    const boutonenlever = document.querySelector(".option");
-    boutonenlever.parentNode.removeChild(boutonenlever);*/
+    // retrait des boutons pour créer des boutons a partir de javascript
     const containerbouton = document.querySelector(".option");
 
     while (containerbouton.firstChild) {
@@ -166,72 +159,13 @@ let goToChapter = function (chapitre) {
       creerbouton = document.createElement("button");
       creerbouton.textContent = chapters[chapitre].boutons[i].titre;
       creerbouton.addEventListener("click", () => {
-        // la destination, c'est la destination du bouton!
-
         goToChapter(chapters[chapitre].boutons[i].destination);
       });
       containerbouton.appendChild(creerbouton);
-
-      /*creerbouton = console.log(
-        `${chapters[chapitre].boutons[i].titre} => goTochapter("${chapters[chapitre].boutons[i].destination}")`
-      );*/
     }
-    /*console.log(chapters[chapitre].boutons[0]);
-    console.log(chapters[chapitre].boutons[1]);*/
   } else {
     console.log("mauvais cle de chapitre chapitre");
   }
 };
 
 goToChapter("debut");
-
-/*window.addEventListener("load", function () {
-  console.log(chapters.debut.titre);
-  console.log(chapters.debut.description);
-  console.log(chapters.debut.boutons[0]);
-  console.log(chapters.debut.boutons[1]);
-});*/
-
-//<div class="boutons">
-
-//  <button>Bouton1</button>
-
-//  <button>Bouton2</button>
-
-//  <button>Bouton3</button>
-
-//</div>
-
-// Sélectionne le div .boutons
-
-/*const boutons = document.querySelector(".boutons");
-
-// Supprime tous les boutons enfants du div .boutons
-
-while (boutons.firstChild) {
-  boutons.removeChild(boutons.firstChild);
-}
-
-// Pour chaque boutons ...
-
-for (let i = 0; i < chapitre.boutons.length; i++) {
-  // on crée un nouveau bouton
-
-  const nouveauBtn = document.createElement("button");
-
-  // on applique un libellé au bouton
-
-  nouveauBtn.textContent = chapitre.boutons[i].titre;
-
-  // on appele goToChapter lorsqu'on clique le bouton
-
-  nouveauBtn.addEventListener("click", () => {
-    // la destination, c'est la destination du bouton!
-
-    goToChapter(chapitre.boutons[i].destination);
-  });
-
-  // enfin, on ajoute le bouton dans la page Web (dans le DOM)
-
-  boutons.appendChild(nouveauBtn);
-}*/
