@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="wQcZCOaijW5SIlA2i32u" name="Page-1">
-        <mxGraphModel dx="1155" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1751" dy="453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -36,14 +36,12 @@
                 <mxCell id="18" value="Vous voyez une &lt;br&gt;taverne et trouvez que vous pourriez avoir de l'information à l'intérieur" style="rhombus;whiteSpace=wrap;html=1;rounded=1;labelBorderColor=none;labelBackgroundColor=none;fillColor=none;fontColor=#000000;strokeColor=#000000;strokeWidth=3;" parent="1" vertex="1">
                     <mxGeometry x="-9.680000000000064" y="260" width="208.75" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;" parent="1" source="72" target="29" edge="1">
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="72" target="81" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="159.69000000000005" y="755" as="sourcePoint"/>
-                        <mxPoint x="237.69000000000028" y="944.9999999999998" as="targetPoint"/>
+                        <mxPoint x="290" y="950" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="329.69000000000005" y="803"/>
-                            <mxPoint x="329.69000000000005" y="980"/>
-                            <mxPoint x="159.69000000000005" y="980"/>
+                            <mxPoint x="335" y="803"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -193,6 +191,17 @@
                 </mxCell>
                 <mxCell id="77" value="Vous décidez d'entrer à l'intérieur de la taverne" style="rounded=1;whiteSpace=wrap;html=1;labelBorderColor=none;labelBackgroundColor=none;fillColor=none;fontColor=#000000;strokeColor=#000000;strokeWidth=3;" parent="1" vertex="1">
                     <mxGeometry x="29.70000000000005" y="540" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#000000;" edge="1" parent="1" source="81" target="40">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="270" y="1030"/>
+                            <mxPoint x="94" y="1030"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" value="Après avoir pris les dagues, vous décidez d'aller vers le comptoir du bar.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;labelBorderColor=none;labelBackgroundColor=none;fillColor=none;fontColor=#000000;strokeColor=#000000;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="270.00000000000006" y="1000" width="130" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
