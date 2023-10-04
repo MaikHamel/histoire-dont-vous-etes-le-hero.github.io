@@ -24,12 +24,22 @@ let chapters = {
       "Vous décidez d'entrer à l'intérieur de la taverne. L'intérieur de la taverne est grand: le coté droite contient une vingtaines de tables qui tous occupées et à la gauche, il y a un bar avec un comptoir pouvant accueillir une trentaine de personnes. En avancant tranquillement dans la taverne, vous voyez une paire de dagues trainant dans un coin ",
     image: "./Assets/images/chapitre3(entrer).png",
     boutons: [
-      { titre: "Les prendre", destination: "comptoir" },
-      { titre: "Ne pas les prendre", destination: "comptoir" },
+      { titre: "Les prendre", destination: "arme" },
+      { titre: "Ne pas les prendre", destination: "pasarme" },
+    ],
+  },
+  arme: {
+    titre: "Au comptoir",
+    description:
+      "Vous décidez d'aller vers le comptoir du bar. Au comptoir, vous voyez qu'un soldat, au regard intimidant, est assit à coté de vous. Vous hesitez entre l'intimider pour montrer votre dominance et avoir de l'information ou lui parler poliment pour avoir de l'information",
+    image: "./Assets/images/chapitre4(comptoir).jpg",
+    boutons: [
+      { titre: "Lui parler poliment", destination: "informations" },
+      { titre: "L'intimider", destination: "intimidation" },
     ],
   },
 
-  comptoir: {
+  pasarme: {
     titre: "Au comptoir",
     description:
       "Vous décidez d'aller vers le comptoir du bar. Au comptoir, vous voyez qu'un soldat, au regard intimidant, est assit à coté de vous. Vous hesitez entre l'intimider pour montrer votre dominance et avoir de l'information ou lui parler poliment pour avoir de l'information",
@@ -95,8 +105,6 @@ let chapters = {
   },
 };
 
-let bouton1 = chapters.entrer.boutons[0];
-let bouton2 = chapters.entrer.boutons[1];
 let bouton3 = chapters.chambre.boutons[0];
 let bouton4 = chapters.chambre.boutons[1];
 
@@ -111,21 +119,32 @@ let goToChapter = function (chapitre) {
     description.innerHTML = chapters[chapitre].description;
     /*console.log(chapters[chapitre].description);*/
     images.src = chapters[chapitre].image;
+
     let twist = false;
-    if (bouton1.onclick == true) {
+    if (chapters[chapitre] == chapters.arme) {
       twist = true;
+      if (twist == true) {
+        chapters.chambre = {
+          titre: "Arrivé à la chambre",
+          description:
+            "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
+          image: "./Assets/images/chapitre8(chambre).jpg",
+          boutons: [{ titre: "Oui", destination: "reussite" }],
+        };
+      }
     }
-
-    if (bouton2.onclick == true) {
+    if (chapters[chapitre] == chapters.pasarme) {
       twist = false;
-    }
+      if (twist == false) {
+        chapters.chambre = {
+          titre: "Arrivé à la chambre",
+          description:
+            "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
+          image: "./Assets/images/chapitre8(chambre).jpg",
 
-    if (twist == true) {
-      bouton4.disabled == true;
-    }
-
-    if (twist == true) {
-      bouton3.disabled == true;
+          boutons: [{ titre: "Non", destination: "echec" }],
+        };
+      }
     }
 
     /*if ((twist = true == true)) {
