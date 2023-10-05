@@ -16,7 +16,7 @@ let chapters = {
     description:
       "En prenant la décision de ne pas entrer, vous arrivez dans une ruelle, qui est occupée par des bandits. Vous vous faites tuer par un des bandits",
     image: "./Assets/images/chapitre2(bandits).jpg",
-    boutons: [{ titre: "recomencer", destination: "debut" }],
+    boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
   entrer: {
@@ -56,7 +56,7 @@ let chapters = {
     description:
       "Prenant vos insultes personnel, il décide de vous étrangler jusqu'à votre mort",
     image: "./Assets/images/chapitre5(intimidation).png",
-    boutons: [{ titre: "recomencer", destination: "debut" }],
+    boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
   informations: {
@@ -75,7 +75,7 @@ let chapters = {
     description:
       "En décidant de vous d'explorer les intérieurs du château avant d'aller dans la chambre du roi, vous croisez in soldat qui vous pose beaucoup de questions. Cependant, vous hésitez à plusieurs de ses questions. Par panique vous essayer de vous enfuir, mais il vous rattrappe et vous emprisonne.",
     image: "./Assets/images/chapitre7(soldat).jpg",
-    boutons: [{ titre: "recomencer", destination: "debut" }],
+    boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
   chambre: {
@@ -94,7 +94,7 @@ let chapters = {
     description:
       "N'ayant pas d'arme pour le tuer, le roi appelle ses gardes et vous emprisonne pour le reste de votre vie",
     image: "./Assets/images/chapitre9(echec).png",
-    boutons: [{ titre: "recomencer", destination: "debut" }],
+    boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
   reussite: {
@@ -102,7 +102,7 @@ let chapters = {
     description:
       "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder la poitrine. Après, vous vous enfuyez, satisfaite de votre vengence",
     image: "./Assets/images/chapitre10(reussite).png",
-    boutons: [{ titre: "recomencer", destination: "debut" }],
+    boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 };
 
