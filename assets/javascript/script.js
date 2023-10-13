@@ -111,7 +111,7 @@ let titre = document.querySelector(".titre");
 let description = document.querySelector(".paragraphe");
 let images = document.querySelector(".image");
 
-let goToChapter = function (chapitre) {
+function goToChapter(chapitre) {
   if (chapters[chapitre]) {
     titre.innerHTML = chapters[chapitre].titre;
 
@@ -166,6 +166,6 @@ let goToChapter = function (chapitre) {
   } else {
     console.log("mauvais cle de chapitre");
   }
-};
+}
 
 goToChapter("debut");
