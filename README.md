@@ -1,6 +1,6 @@
 # Hamel*Maik*-Vengence-
 
-![](Assets/images/Logo.png)
+![](assets/images/Logo.png)
 
 [devloppement web - Vous êtes le héro](https://smnarnold.com/projets/vous-etes-le-heros)
 
@@ -12,4 +12,4 @@
 
 ## Diagramme
 
-![](Assets/images/schemat.png)
+![](assets/images/schemat.png)
