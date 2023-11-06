@@ -75,6 +75,7 @@ const chapters = {
     description:
       "En décidant de vous d'explorer les intérieurs du château avant d'aller dans la chambre du roi, vous croisez in soldat qui vous pose beaucoup de questions. Cependant, vous hésitez à plusieurs de ses questions. Par panique vous essayer de vous enfuir, mais il vous rattrappe et vous emprisonne.",
     image: "./assets/images/chapitre7(soldat).jpg",
+    video: "chapitre7(soldat-video)",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
@@ -102,6 +103,7 @@ const chapters = {
     description:
       "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder la poitrine. Après, vous vous enfuyez, satisfaite de votre vengence",
     image: "./assets/images/chapitre10(reussite).png",
+    video: "chapitre10(reussite-video)",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 };
@@ -118,6 +120,12 @@ function goToChapter(chapitre) {
     description.innerHTML = chapters[chapitre].description;
 
     images.src = chapters[chapitre].image;
+
+    if (chapters[chapitre] == chapters.soldat) {
+      let video = (chapters[chapitre].video =
+        "./assets/video/chapitre7(soldat-video).mp4");
+      images.src = video;
+    }
 
     //twist
 
