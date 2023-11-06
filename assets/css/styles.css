@@ -5,17 +5,17 @@
 
 @font-face {
   font-family: "Dungeon";
-  src: url(../Font/DUNGRG__.TTF) format("truetype");
+  src: url(../font/DUNGRG__.TTF) format("truetype");
 }
 
 @font-face {
   font-family: "Fairies";
-  src: url(../Font/Fairies.otf) format("opentype");
+  src: url(../font/Fairies.otf) format("opentype");
 }
 
 @font-face {
   font-family: "Press";
-  src: url(../Font/PressJobs.ttf) format("truetype");
+  src: url(../font/PressJobs.ttf) format("truetype");
 }
 
 body {
