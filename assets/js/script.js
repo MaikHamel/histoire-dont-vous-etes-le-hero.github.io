@@ -112,6 +112,8 @@ const chapters = {
 let titre = document.querySelector(".titre");
 let description = document.querySelector(".paragraphe");
 let images = document.querySelector(".image");
+let jeu = document.querySelector(".jeu");
+let video = document.querySelector(".video");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -121,10 +123,18 @@ function goToChapter(chapitre) {
 
     images.src = chapters[chapitre].image;
 
-    if (chapters[chapitre] == chapters.soldat) {
-      let video = (chapters[chapitre].video =
-        "./assets/video/chapitre7(soldat-video).mp4");
-      images.src = video;
+    if (chapters[chapitre].video) {
+      console.log("allo");
+      video.style.display = "flex";
+      images.style.order = 1;
+      images.style.display = "none";
+      if (chapters[chapitre] == chapters.soldat) {
+        video.src = "./assets/video/chapitre7(soldat-video).mp4";
+      }
+    } else {
+      video.style.display = "none";
+      images.style.order = 0;
+      images.style.display = "flex";
     }
 
     //twist
