@@ -123,13 +123,17 @@ function goToChapter(chapitre) {
 
     images.src = chapters[chapitre].image;
 
+    // ajout des video
+
     if (chapters[chapitre].video) {
-      console.log("allo");
       video.style.display = "flex";
       images.style.order = 1;
       images.style.display = "none";
-      if (chapters[chapitre] == chapters.soldat) {
+      if (chapters[chapitre] === chapters.soldat) {
         video.src = "./assets/video/chapitre7(soldat-video).mp4";
+      }
+      if (chapters[chapitre] === chapters.reussite) {
+        video.src = "./assets/video/chapitre10(reussite-video).mp4";
       }
     } else {
       video.style.display = "none";
