@@ -101,7 +101,7 @@ const chapters = {
     titre: "L'heure de la vengence",
     description:
       "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder la poitrine. Après, vous vous enfuyez, satisfaite de votre vengence",
-    image: "./assets/images/chapitre10(reussite).png",
+    image: "./assets/video/chapitre10(reussite-video).mp4",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 };
