@@ -181,6 +181,9 @@ function goToChapter(chapitre) {
       creerbouton = document.createElement("button");
       creerbouton.textContent = chapters[chapitre].boutons[i].titre;
       creerbouton.addEventListener("click", () => {
+        let audio = document.querySelector("audio");
+        audio.currentTime = 0;
+        audio.play();
         goToChapter(chapters[chapitre].boutons[i].destination);
       });
       containerbouton.appendChild(creerbouton);
