@@ -184,6 +184,11 @@ function goToChapter(chapitre) {
         let audio = document.querySelector("audio");
         audio.currentTime = 0;
         audio.play();
+
+        setTimeout(() => {
+          audio.pause();
+        }, 3000);
+
         goToChapter(chapters[chapitre].boutons[i].destination);
       });
       containerbouton.appendChild(creerbouton);
