@@ -5,6 +5,7 @@ const chapters = {
     description:
       "Vous, une elfe, voulez vous venger du roi du royaume voisin pour avoir détruit votre village. Assoiffée de vegence, vous arrivez au royaume du roi. En vous promenant dans le gros village du royaume, vous voyez une taverne et trouvez que vous pourriez avoir des informations à l'intérieur",
     image: "./assets/images/chapitre1(debut).jpg",
+    musique: "./assets/son/transition.mp3",
     boutons: [
       { titre: "Entrer à l'intérieur", destination: "entrer" },
       { titre: "Ne pas entrer à l'intérieur", destination: "bandits" },
@@ -16,6 +17,7 @@ const chapters = {
     description:
       "En prenant la décision de ne pas entrer, vous arrivez dans une ruelle, qui est occupée par des bandits. Vous vous faites tuer par un des bandits",
     image: "./assets/images/chapitre2(bandits).jpg",
+    musique: "./assets/son/epee_mort1.mp3",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
@@ -24,6 +26,7 @@ const chapters = {
     description:
       "Vous décidez d'entrer à l'intérieur de la taverne. L'intérieur de la taverne est grand: le coté droite contient une vingtaines de tables qui tous occupées et à la gauche, il y a un bar avec un comptoir pouvant accueillir une trentaine de personnes. En avancant tranquillement dans la taverne, vous voyez une paire de dagues trainant dans un coin ",
     image: "./assets/images/chapitre3(entrer).png",
+    musique: "./assets/son/porte.mp3",
     boutons: [
       { titre: "Les prendre", destination: "arme" },
       { titre: "Ne pas les prendre", destination: "pasarme" },
@@ -34,6 +37,7 @@ const chapters = {
     description:
       "Vous décidez d'aller vers le comptoir du bar. Au comptoir, vous voyez qu'un soldat, au regard intimidant, est assit à coté de vous. Vous hesitez entre l'intimider pour montrer votre dominance et avoir de l'information ou lui parler poliment pour avoir de l'information",
     image: "./assets/images/chapitre4(comptoir).jpg",
+    musique: "./assets/son/epee_dague.mp3",
     boutons: [
       { titre: "Lui parler poliment", destination: "informations" },
       { titre: "L'intimider", destination: "intimidation" },
@@ -45,6 +49,7 @@ const chapters = {
     description:
       "Vous décidez d'aller vers le comptoir du bar. Au comptoir, vous voyez qu'un soldat, au regard intimidant, est assit à coté de vous. Vous hesitez entre l'intimider pour montrer votre dominance et avoir de l'information ou lui parler poliment pour avoir de l'information",
     image: "./assets/images/chapitre4(comptoir).jpg",
+    musique: "./assets/son/epee_dague.mp3",
     boutons: [
       { titre: "Lui parler poliment", destination: "informations" },
       { titre: "L'intimider", destination: "intimidation" },
@@ -56,6 +61,7 @@ const chapters = {
     description:
       "Prenant vos insultes personnel, il décide de vous étrangler jusqu'à votre mort",
     image: "./assets/images/chapitre5(intimidation).png",
+    musique: "./assets/son/punch_soldat.mp3",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
@@ -64,6 +70,7 @@ const chapters = {
     description:
       "Il vous répond calmement que celui-ci sait seulement que le roi est présentement dans le chateau. Vous décidez donc d'aller au château. Au château, vous entendez que le roi est dans sa chambre",
     image: "./assets/images/chapitre6(informations).png",
+    musique: "./assets/son/chateau.mp3",
     boutons: [
       { titre: "Aller vers la chambre", destination: "chambre" },
       { titre: "Explorer le château", destination: "soldat" },
@@ -75,6 +82,7 @@ const chapters = {
     description:
       "En décidant de vous d'explorer les intérieurs du château avant d'aller dans la chambre du roi, vous croisez in soldat qui vous pose beaucoup de questions. Cependant, vous hésitez à plusieurs de ses questions. Par panique vous essayer de vous enfuir, mais il vous rattrappe et vous emprisonne.",
     image: "./assets/images/chapitre7(soldat).jpg",
+    musique: "./assets/son/mort_explorer.mp3",
     video: "chapitre7(soldat-video)",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
@@ -84,6 +92,7 @@ const chapters = {
     description:
       "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
     image: "./assets/images/chapitre8(chambre).jpg",
+    musique: "./assets/son/chambre.mp3",
     boutons: [
       { titre: "Oui", destination: "reussite" },
       { titre: "Non", destination: "echec" },
@@ -95,6 +104,7 @@ const chapters = {
     description:
       "N'ayant pas d'arme pour le tuer, le roi appelle ses gardes et vous emprisonne pour le reste de votre vie",
     image: "./assets/images/chapitre9(echec).png",
+    musique: "./assets/son/mort_finale.mp3",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
@@ -103,6 +113,7 @@ const chapters = {
     description:
       "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder la poitrine. Après, vous vous enfuyez, satisfaite de votre vengence",
     image: "./assets/images/chapitre10(reussite).png",
+    musique: "./assets/son/reussi.mp3",
     video: "chapitre10(reussite-video)",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
@@ -181,6 +192,7 @@ function goToChapter(chapitre) {
       creerbouton = document.createElement("button");
       creerbouton.textContent = chapters[chapitre].boutons[i].titre;
       creerbouton.addEventListener("click", () => {
+        /*
         let audio = document.querySelector("audio");
         audio.currentTime = 0;
         audio.play();
@@ -188,6 +200,7 @@ function goToChapter(chapitre) {
         setTimeout(() => {
           audio.pause();
         }, 3000);
+        */
 
         goToChapter(chapters[chapitre].boutons[i].destination);
       });
