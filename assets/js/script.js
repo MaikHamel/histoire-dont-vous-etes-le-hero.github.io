@@ -92,7 +92,7 @@ const chapters = {
     description:
       "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
     image: "./assets/images/chapitre8(chambre).jpg",
-    musique: "./assets/son/draps.mp3",
+
     boutons: [
       { titre: "Oui", destination: "reussite" },
       { titre: "Non", destination: "echec" },
@@ -141,6 +141,7 @@ function goToChapter(chapitre) {
       audio.play();
       setTimeout(() => {
         audio.pause();
+        audio.currentTime = 0;
       }, 3000);
     } else {
       audio.pause();
@@ -175,6 +176,7 @@ function goToChapter(chapitre) {
           description:
             "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
           image: "./assets/images/chapitre8(chambre).jpg",
+          musique: "./assets/son/draps.mp3",
           boutons: [{ titre: "Oui", destination: "reussite" }],
         };
       }
@@ -187,7 +189,7 @@ function goToChapter(chapitre) {
           description:
             "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
           image: "./assets/images/chapitre8(chambre).jpg",
-
+          musique: "./assets/son/draps.mp3",
           boutons: [{ titre: "Non", destination: "echec" }],
         };
       }
