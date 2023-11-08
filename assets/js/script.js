@@ -1,11 +1,11 @@
 // chapitres
+
 const chapters = {
   debut: {
     titre: "intro",
     description:
       "Vous, une elfe, voulez vous venger du roi du royaume voisin pour avoir détruit votre village. Assoiffée de vegence, vous arrivez au royaume du roi. En vous promenant dans le gros village du royaume, vous voyez une taverne et trouvez que vous pourriez avoir des informations à l'intérieur",
     image: "./assets/images/chapitre1(debut).jpg",
-    musique: "./assets/son/transition.mp3",
     boutons: [
       { titre: "Entrer à l'intérieur", destination: "entrer" },
       { titre: "Ne pas entrer à l'intérieur", destination: "bandits" },
@@ -92,7 +92,7 @@ const chapters = {
     description:
       "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
     image: "./assets/images/chapitre8(chambre).jpg",
-    musique: "./assets/son/chambre.mp3",
+    musique: "./assets/son/draps.mp3",
     boutons: [
       { titre: "Oui", destination: "reussite" },
       { titre: "Non", destination: "echec" },
@@ -125,6 +125,7 @@ let description = document.querySelector(".paragraphe");
 let images = document.querySelector(".image");
 let jeu = document.querySelector(".jeu");
 let video = document.querySelector(".video");
+const audio = document.createElement("audio");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -134,6 +135,17 @@ function goToChapter(chapitre) {
 
     images.src = chapters[chapitre].image;
 
+    // ajout sons
+    if (chapters[chapitre].musique) {
+      audio.src = chapters[chapitre].musique;
+      audio.play();
+      setTimeout(() => {
+        audio.pause();
+      }, 3000);
+    } else {
+      audio.pause();
+      audio.currentTime = 0;
+    }
     // ajout des video
 
     if (chapters[chapitre].video) {
