@@ -148,11 +148,26 @@ function goToChapter(chapitre) {
       audio.currentTime = 0;
     }
     // ajout des video
+    /*
+    let video = document.createElement("video");
+    video.setAttribute("class", "video");
+    jeu.appendChild(video);
+    */
 
     if (chapters[chapitre].video) {
+      /*
+      video.autoplay = true;
+      video.muted = true;
+      video.loop = true;
+      */
+
       video.style.display = "flex";
       images.style.order = 1;
       images.style.display = "none";
+      /*
+      jeu.removeChild(images);
+      */
+
       if (chapters[chapitre] === chapters.soldat) {
         video.src = "./assets/video/chapitre7(soldat-video).mp4";
       }
@@ -160,6 +175,9 @@ function goToChapter(chapitre) {
         video.src = "./assets/video/chapitre10(reussite-video).mp4";
       }
     } else {
+      /*
+      jeu.removeChild(video);
+      */
       video.style.display = "none";
       images.style.order = 0;
       images.style.display = "flex";
