@@ -6,6 +6,7 @@ const chapters = {
     description:
       "Vous, une elfe, voulez vous venger du roi du royaume voisin pour avoir détruit votre village. Assoiffée de vegence, vous arrivez au royaume du roi. En vous promenant dans le gros village du royaume, vous voyez une taverne et trouvez que vous pourriez avoir des informations à l'intérieur",
     image: "./assets/images/chapitre1(debut).jpg",
+    musique: "assets/musique/the-britons-127687.mp3",
     boutons: [
       { titre: "Entrer à l'intérieur", destination: "entrer" },
       { titre: "Ne pas entrer à l'intérieur", destination: "bandits" },
