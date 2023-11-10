@@ -28,7 +28,7 @@ const chapters = {
       "Vous décidez d'entrer à l'intérieur de la taverne. L'intérieur de la taverne est grand: le coté droite contient une vingtaines de tables qui tous occupées et à la gauche, il y a un bar avec un comptoir pouvant accueillir une trentaine de personnes. En avancant tranquillement dans la taverne, vous voyez une paire de dagues trainant dans un coin ",
     image: "./assets/images/chapitre3(entrer).png",
     sons: "./assets/son/porte.mp3",
-    musique: "",
+    musique: "assets/musique/musik-bauern-142722.mp3",
     boutons: [
       { titre: "Les prendre", destination: "arme" },
       { titre: "Ne pas les prendre", destination: "pasarme" },
@@ -66,7 +66,7 @@ const chapters = {
       "Prenant vos insultes personnel, il décide de vous étrangler jusqu'à votre mort",
     image: "./assets/images/chapitre5(intimidation).png",
     sons: "./assets/son/punch_soldat.mp3",
-    musique: "",
+    musique: "assets/musique/mytic-hotel-20105.mp3",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
@@ -76,7 +76,7 @@ const chapters = {
       "Il vous répond calmement que celui-ci sait seulement que le roi est présentement dans le chateau. Vous décidez donc d'aller au château. Au château, vous entendez que le roi est dans sa chambre",
     image: "./assets/images/chapitre6(informations).png",
     sons: "./assets/son/table-slam-102489.mp3",
-    musique: "./assets/",
+    musique: "./assets/musique/chateau.mp3",
     boutons: [
       { titre: "Aller vers la chambre", destination: "chambre" },
       { titre: "Explorer le château", destination: "soldat" },
@@ -89,7 +89,7 @@ const chapters = {
       "En décidant de vous d'explorer les intérieurs du château avant d'aller dans la chambre du roi, vous croisez in soldat qui vous pose beaucoup de questions. Cependant, vous hésitez à plusieurs de ses questions. Par panique vous essayer de vous enfuir, mais il vous rattrappe et vous emprisonne.",
     image: "./assets/images/chapitre7(soldat).jpg",
     sons: "./assets/son/mort_explorer.mp3",
-    musique: "",
+    musique: "assets/musique/celestial-equator-ambient-109214.mp3",
     video: "./assets/video/chapitre7(soldat-video).mp4",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
@@ -112,7 +112,7 @@ const chapters = {
       "N'ayant pas d'arme pour le tuer, le roi appelle ses gardes et vous emprisonne pour le reste de votre vie",
     image: "./assets/images/chapitre9(echec).png",
     sons: "./assets/son/metal-door-slam-172172.mp3",
-    musique: "",
+    musique: "assets/musique/mort_finale.mp3",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
@@ -122,7 +122,7 @@ const chapters = {
       "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder la poitrine. Après, vous vous enfuyez, satisfaite de votre vengence",
     image: "./assets/images/chapitre10(reussite).png",
     sons: "./assets/son/short-choir-6116.mp3",
-    musique: "",
+    musique: "assets/musique/wonderland-124601.mp3",
     video: "./assets/video/chapitre10(reussite-video).mp4",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
@@ -135,6 +135,7 @@ let images = document.querySelector(".image");
 let jeu = document.querySelector(".jeu");
 let video = document.querySelector(".video");
 const audio = document.createElement("audio");
+const ambiance = document.createElement("audio");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -144,6 +145,15 @@ function goToChapter(chapitre) {
 
     images.src = chapters[chapitre].image;
 
+    // ajout musique
+    if (chapters[chapitre].musique) {
+      ambiance.src = chapters[chapitre].musique;
+      ambiance.play();
+      ambiance.loop();
+    } else {
+      ambiance.pause();
+      ambiance.currentTime = 0;
+    }
     // ajout sons
     if (chapters[chapitre].sons) {
       audio.src = chapters[chapitre].sons;
@@ -152,6 +162,7 @@ function goToChapter(chapitre) {
       audio.pause();
       audio.currentTime = 0;
     }
+
     // ajout des video
     /*
     let video = document.createElement("video");
@@ -193,8 +204,8 @@ function goToChapter(chapitre) {
           description:
             "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
           image: "./assets/images/chapitre8(chambre).jpg",
-          sons: "./assets/son/draps.mp3",
-          musique: "",
+          sons: "./assets/son/clothes-drop-2-40202.mp3",
+          musique: "assets/musique/silent-worlds-ambient-soundscape-110183.mp3",
           boutons: [{ titre: "Oui", destination: "reussite" }],
         };
       }
@@ -207,8 +218,8 @@ function goToChapter(chapitre) {
           description:
             "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
           image: "./assets/images/chapitre8(chambre).jpg",
-          sons: "./assets/son/draps.mp3",
-          musique: "",
+          sons: "./assets/son/clothes-drop-2-40202.mp3",
+          musique: "assets/musique/silent-worlds-ambient-soundscape-110183.mp3",
           boutons: [{ titre: "Non", destination: "echec" }],
         };
       }
