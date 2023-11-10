@@ -149,11 +149,11 @@ function goToChapter(chapitre) {
     if (chapters[chapitre].musique) {
       ambiance.src = chapters[chapitre].musique;
       ambiance.play();
-      ambiance.loop();
-    } else {
-      ambiance.pause();
-      ambiance.currentTime = 0;
+      ambiance.loop = true;
     }
+
+    // musique qui continue
+
     // ajout sons
     if (chapters[chapitre].sons) {
       audio.src = chapters[chapitre].sons;
