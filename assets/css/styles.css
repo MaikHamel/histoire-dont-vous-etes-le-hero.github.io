@@ -66,10 +66,9 @@ body {
   color: #f0e5f3;
   font-size: 14px;
   align-self: center;
-  text-align: justify;
   text-shadow: 5px 5px 2px #060913;
   margin: 1%;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .image {
@@ -133,7 +132,7 @@ button:hover {
 
   .paragraphe {
     font-size: 12px;
-    padding: 10px;
+    padding: 1rem;
   }
 
   .logo {
