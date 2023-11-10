@@ -17,7 +17,7 @@ const chapters = {
     description:
       "En prenant la décision de ne pas entrer, vous arrivez dans une ruelle, qui est occupée par des bandits. Vous vous faites tuer par un des bandits",
     image: "./assets/images/chapitre2(bandits).jpg",
-    musique: "./assets/son/epee_mort1.mp3",
+    sons: "./assets/son/epee_mort1.mp3",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
@@ -26,7 +26,7 @@ const chapters = {
     description:
       "Vous décidez d'entrer à l'intérieur de la taverne. L'intérieur de la taverne est grand: le coté droite contient une vingtaines de tables qui tous occupées et à la gauche, il y a un bar avec un comptoir pouvant accueillir une trentaine de personnes. En avancant tranquillement dans la taverne, vous voyez une paire de dagues trainant dans un coin ",
     image: "./assets/images/chapitre3(entrer).png",
-    musique: "./assets/son/porte.mp3",
+    sons: "./assets/son/porte.mp3",
     boutons: [
       { titre: "Les prendre", destination: "arme" },
       { titre: "Ne pas les prendre", destination: "pasarme" },
@@ -37,7 +37,7 @@ const chapters = {
     description:
       "Vous décidez d'aller vers le comptoir du bar. Au comptoir, vous voyez qu'un soldat, au regard intimidant, est assit à coté de vous. Vous hesitez entre l'intimider pour montrer votre dominance et avoir de l'information ou lui parler poliment pour avoir de l'information",
     image: "./assets/images/chapitre4(comptoir).jpg",
-    musique: "./assets/son/epee_dague.mp3",
+    sons: "./assets/son/epee_dague.mp3",
     boutons: [
       { titre: "Lui parler poliment", destination: "informations" },
       { titre: "L'intimider", destination: "intimidation" },
@@ -49,7 +49,7 @@ const chapters = {
     description:
       "Vous décidez d'aller vers le comptoir du bar. Au comptoir, vous voyez qu'un soldat, au regard intimidant, est assit à coté de vous. Vous hesitez entre l'intimider pour montrer votre dominance et avoir de l'information ou lui parler poliment pour avoir de l'information",
     image: "./assets/images/chapitre4(comptoir).jpg",
-    musique: "./assets/son/epee_dague.mp3",
+    sons: "./assets/son/epee_dague.mp3",
     boutons: [
       { titre: "Lui parler poliment", destination: "informations" },
       { titre: "L'intimider", destination: "intimidation" },
@@ -61,7 +61,7 @@ const chapters = {
     description:
       "Prenant vos insultes personnel, il décide de vous étrangler jusqu'à votre mort",
     image: "./assets/images/chapitre5(intimidation).png",
-    musique: "./assets/son/punch_soldat.mp3",
+    sons: "./assets/son/punch_soldat.mp3",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
@@ -70,7 +70,7 @@ const chapters = {
     description:
       "Il vous répond calmement que celui-ci sait seulement que le roi est présentement dans le chateau. Vous décidez donc d'aller au château. Au château, vous entendez que le roi est dans sa chambre",
     image: "./assets/images/chapitre6(informations).png",
-    musique: "./assets/son/chateau.mp3",
+    sons: "./assets/son/table-slam-102489.mp3",
     boutons: [
       { titre: "Aller vers la chambre", destination: "chambre" },
       { titre: "Explorer le château", destination: "soldat" },
@@ -82,7 +82,7 @@ const chapters = {
     description:
       "En décidant de vous d'explorer les intérieurs du château avant d'aller dans la chambre du roi, vous croisez in soldat qui vous pose beaucoup de questions. Cependant, vous hésitez à plusieurs de ses questions. Par panique vous essayer de vous enfuir, mais il vous rattrappe et vous emprisonne.",
     image: "./assets/images/chapitre7(soldat).jpg",
-    musique: "./assets/son/mort_explorer.mp3",
+    sons: "./assets/son/mort_explorer.mp3",
     video: "./assets/video/chapitre7(soldat-video).mp4",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
@@ -104,7 +104,7 @@ const chapters = {
     description:
       "N'ayant pas d'arme pour le tuer, le roi appelle ses gardes et vous emprisonne pour le reste de votre vie",
     image: "./assets/images/chapitre9(echec).png",
-    musique: "./assets/son/mort_finale.mp3",
+    sons: "./assets/son/metal-door-slam-172172.mp3",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
 
@@ -113,7 +113,7 @@ const chapters = {
     description:
       "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder la poitrine. Après, vous vous enfuyez, satisfaite de votre vengence",
     image: "./assets/images/chapitre10(reussite).png",
-    musique: "./assets/son/reussi.mp3",
+    sons: "./assets/son/short-choir-6116.mp3",
     video: "./assets/video/chapitre10(reussite-video).mp4",
     boutons: [{ titre: "recommencer", destination: "debut" }],
   },
@@ -136,13 +136,9 @@ function goToChapter(chapitre) {
     images.src = chapters[chapitre].image;
 
     // ajout sons
-    if (chapters[chapitre].musique) {
-      audio.src = chapters[chapitre].musique;
+    if (chapters[chapitre].sons) {
+      audio.src = chapters[chapitre].sons;
       audio.play();
-      setTimeout(() => {
-        audio.pause();
-        audio.currentTime = 0;
-      }, 3000);
     } else {
       audio.pause();
       audio.currentTime = 0;
@@ -188,7 +184,7 @@ function goToChapter(chapitre) {
           description:
             "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
           image: "./assets/images/chapitre8(chambre).jpg",
-          musique: "./assets/son/draps.mp3",
+          sons: "./assets/son/draps.mp3",
           boutons: [{ titre: "Oui", destination: "reussite" }],
         };
       }
@@ -201,7 +197,7 @@ function goToChapter(chapitre) {
           description:
             "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
           image: "./assets/images/chapitre8(chambre).jpg",
-          musique: "./assets/son/draps.mp3",
+          sons: "./assets/son/draps.mp3",
           boutons: [{ titre: "Non", destination: "echec" }],
         };
       }
