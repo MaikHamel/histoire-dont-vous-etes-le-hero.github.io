@@ -114,7 +114,9 @@ const chapters = {
     image: "./assets/images/chapitre9(echec).png",
     sons: "./assets/son/metal-door-slam-172172.mp3",
     musique: "assets/musique/mort_finale.mp3",
+    /*
     boutons: [{ titre: "recommencer", destination: "debut" }],
+    */
   },
 
   reussite: {
@@ -125,7 +127,9 @@ const chapters = {
     sons: "./assets/son/short-choir-6116.mp3",
     musique: "assets/musique/wonderland-124601.mp3",
     video: "./assets/video/chapitre10(reussite-video).mp4",
+    /*
     boutons: [{ titre: "recommencer", destination: "debut" }],
+    */
   },
 };
 
@@ -137,6 +141,7 @@ let jeu = document.querySelector(".jeu");
 let video = document.querySelector(".video");
 const audio = document.createElement("audio");
 const ambiance = document.createElement("audio");
+const boutonDebut = document.getElementById("boutonDebut");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -145,6 +150,8 @@ function goToChapter(chapitre) {
     description.innerHTML = chapters[chapitre].description;
 
     images.src = chapters[chapitre].image;
+
+    localStorage.setItem("endroit", chapitre);
 
     // ajout musique
     if (chapters[chapitre].musique) {
@@ -195,7 +202,7 @@ function goToChapter(chapitre) {
     }
 
     //twist
-
+    let changement = "";
     let twist = false;
     if (chapters[chapitre] == chapters.arme) {
       twist = true;
@@ -209,6 +216,7 @@ function goToChapter(chapitre) {
           musique: "assets/musique/silent-worlds-ambient-soundscape-110183.mp3",
           boutons: [{ titre: "Oui", destination: "reussite" }],
         };
+        changement = chapters[chapitre] = chapters.arme;
       }
     }
     if (chapters[chapitre] == chapters.pasarme) {
@@ -223,9 +231,10 @@ function goToChapter(chapitre) {
           musique: "assets/musique/silent-worlds-ambient-soundscape-110183.mp3",
           boutons: [{ titre: "Non", destination: "echec" }],
         };
+        changement = chapters[chapitre] = chapters.pasarme;
       }
     }
-
+    localStorage.setItem("twist", changement);
     // retrait des boutons pour créer des boutons a partir de javascript
     const containerbouton = document.querySelector(".option");
 
@@ -256,4 +265,15 @@ function goToChapter(chapitre) {
   }
 }
 
+let endroit = localStorage.getItem("endroit", "twist");
+
+goToChapter(`${endroit}`);
+console.log(endroit);
+
+boutonDebut.addEventListener("click", function () {
+  goToChapter("debut");
+  localStorage.removeItem("endroit", "twist");
+});
+/*
 goToChapter("debut");
+*/

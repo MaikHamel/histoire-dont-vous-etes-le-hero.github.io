@@ -41,6 +41,14 @@ body {
   box-shadow: 0px 0px 50px 1px #3d3d64;
   border-radius: 1%;
 }
+.boutonRecommencer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+#boutonDebut {
+  height: 3vh;
+}
 
 .logo {
   font-family: "Dungeon";
