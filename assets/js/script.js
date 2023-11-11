@@ -114,9 +114,7 @@ const chapters = {
     image: "./assets/images/chapitre9(echec).png",
     sons: "./assets/son/metal-door-slam-172172.mp3",
     musique: "assets/musique/mort_finale.mp3",
-    /*
     boutons: [{ titre: "recommencer", destination: "debut" }],
-    */
   },
 
   reussite: {
@@ -127,9 +125,7 @@ const chapters = {
     sons: "./assets/son/short-choir-6116.mp3",
     musique: "assets/musique/wonderland-124601.mp3",
     video: "./assets/video/chapitre10(reussite-video).mp4",
-    /*
     boutons: [{ titre: "recommencer", destination: "debut" }],
-    */
   },
 };
 
@@ -270,11 +266,9 @@ function goToChapter(chapitre) {
   }
 }
 
-let endroit = localStorage.getItem("endroit", "twist");
-if (localStorage == "") {
+if (localStorage == undefined) {
   goToChapter("debut");
 } else {
+  let endroit = localStorage.getItem("endroit", "twist");
   goToChapter(`${endroit}`);
 }
-
-console.log(endroit);
