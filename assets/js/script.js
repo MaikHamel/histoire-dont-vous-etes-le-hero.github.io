@@ -235,6 +235,12 @@ function goToChapter(chapitre) {
       }
     }
     localStorage.setItem("twist", changement);
+
+    boutonDebut.addEventListener("click", function () {
+      goToChapter("debut");
+      localStorage.removeItem("endroit", "twist");
+    });
+
     // retrait des boutons pour créer des boutons a partir de javascript
     const containerbouton = document.querySelector(".option");
 
@@ -268,12 +274,9 @@ function goToChapter(chapitre) {
 let endroit = localStorage.getItem("endroit", "twist");
 
 goToChapter(`${endroit}`);
+
 console.log(endroit);
 
-boutonDebut.addEventListener("click", function () {
-  goToChapter("debut");
-  localStorage.removeItem("endroit", "twist");
-});
 /*
 goToChapter("debut");
 */
