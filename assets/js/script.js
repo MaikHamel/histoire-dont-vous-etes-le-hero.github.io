@@ -132,7 +132,12 @@ const chapters = {
     */
   },
 };
-
+window.addEventListener(
+  ("onload",
+  function () {
+    goToChapter("debut");
+  })
+);
 // placemnets des informations dans javascript
 let titre = document.querySelector(".titre");
 let description = document.querySelector(".paragraphe");
@@ -142,7 +147,7 @@ let video = document.querySelector(".video");
 const audio = document.createElement("audio");
 const ambiance = document.createElement("audio");
 const boutonDebut = document.getElementById("boutonDebut");
-
+localStorage.setItem("endroit", chapitre);
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
     titre.innerHTML = chapters[chapitre].titre;
@@ -150,8 +155,6 @@ function goToChapter(chapitre) {
     description.innerHTML = chapters[chapitre].description;
 
     images.src = chapters[chapitre].image;
-
-    localStorage.setItem("endroit", chapitre);
 
     // ajout musique
     if (chapters[chapitre].musique) {
@@ -276,7 +279,3 @@ let endroit = localStorage.getItem("endroit", "twist");
 goToChapter(`${endroit}`);
 
 console.log(endroit);
-
-/*
-goToChapter("debut");
-*/
