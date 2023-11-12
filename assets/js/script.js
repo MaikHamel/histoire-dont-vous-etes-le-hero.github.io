@@ -138,6 +138,7 @@ let video = document.querySelector(".video");
 const audio = document.createElement("audio");
 const ambiance = document.createElement("audio");
 const boutonDebut = document.getElementById("boutonDebut");
+let barre = document.querySelectorAll("#progression");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -149,6 +150,58 @@ function goToChapter(chapitre) {
 
     // local storage pour les chapitre
     localStorage.setItem("endroit", chapitre);
+
+    //barre progression
+
+    if (chapters[chapitre] == chapters.debut) {
+      barre[0].classList.add("couleur");
+    } else {
+      barre[0].classList.remove("couleur");
+    }
+
+    if (
+      chapters[chapitre] == chapters.entrer ||
+      chapters[chapitre] == chapters.bandits
+    ) {
+      barre[1].classList.add("couleur");
+    } else {
+      barre[1].classList.remove("couleur");
+    }
+
+    if (
+      chapters[chapitre] == chapters.arme ||
+      chapters[chapitre] == chapters.pasarme
+    ) {
+      barre[2].classList.add("couleur");
+    } else {
+      barre[2].classList.remove("couleur");
+    }
+
+    if (
+      chapters[chapitre] == chapters.informations ||
+      chapters[chapitre] == chapters.intimidation
+    ) {
+      barre[3].classList.add("couleur");
+    } else {
+      barre[3].classList.remove("couleur");
+    }
+
+    if (
+      chapters[chapitre] == chapters.chambre ||
+      chapters[chapitre] == chapters.soldat
+    ) {
+      barre[4].classList.add("couleur");
+    } else {
+      barre[4].classList.remove("couleur");
+    }
+    if (
+      chapters[chapitre] == chapters.reussite ||
+      chapters[chapitre] == chapters.echec
+    ) {
+      barre[5].classList.add("couleur");
+    } else {
+      barre[5].classList.remove("couleur");
+    }
 
     // ajout musique
     if (chapters[chapitre].musique) {

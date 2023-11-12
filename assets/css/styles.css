@@ -44,7 +44,7 @@ body {
 .boutonRecommencer {
   display: flex;
   align-items: flex-end;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 #boutonDebut {
   height: 3vh;
@@ -118,6 +118,33 @@ button:hover {
   color: #524459;
 }
 
+.barre {
+  height: 10vh;
+  width: 25vh;
+  position: absolute;
+  top: 0vh;
+
+  display: flex;
+  flex-direction: row;
+}
+.progression:nth-child(2) {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.progression:nth-child(7) {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.progression {
+  align-self: flex-end;
+  margin-bottom: 1vh;
+  width: 4.5vh;
+  height: 1.2vh;
+  background-color: rgb(26, 21, 58);
+}
+
 @media screen and (max-width: 600px) {
   body {
     height: 100vh;
@@ -166,4 +193,8 @@ button:hover {
     height: 800px;
     width: 500px;
   }
+}
+
+.couleur {
+  background-color: #f0e5f3;
 }
