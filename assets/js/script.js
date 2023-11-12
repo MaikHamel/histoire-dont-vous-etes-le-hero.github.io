@@ -266,7 +266,7 @@ function goToChapter(chapitre) {
   }
 }
 
-if (localStorage == undefined) {
+if (localStorage === undefined) {
   goToChapter("debut");
 } else {
   let endroit = localStorage.getItem("endroit", "twist");
