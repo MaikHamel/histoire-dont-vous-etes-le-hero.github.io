@@ -146,6 +146,8 @@ function goToChapter(chapitre) {
     description.innerHTML = chapters[chapitre].description;
 
     images.src = chapters[chapitre].image;
+
+    // local storage pour les chapitre
     localStorage.setItem("endroit", chapitre);
 
     // ajout musique
@@ -229,12 +231,8 @@ function goToChapter(chapitre) {
         changement = chapters[chapitre] = chapters.pasarme;
       }
     }
+    // localstorage pour la twist
     localStorage.setItem("twist", changement);
-
-    boutonDebut.addEventListener("click", function () {
-      goToChapter("debut");
-      localStorage.removeItem("endroit", "twist");
-    });
 
     // retrait des boutons pour créer des boutons a partir de javascript
     const containerbouton = document.querySelector(".option");
@@ -265,10 +263,18 @@ function goToChapter(chapitre) {
     console.log("mauvais cle de chapitre");
   }
 }
+// local storage
 
-if (localStorage === undefined) {
+if (localStorage == undefined) {
   goToChapter("debut");
 } else {
   let endroit = localStorage.getItem("endroit", "twist");
   goToChapter(`${endroit}`);
 }
+
+//bouton renitialiser
+
+boutonDebut.addEventListener("click", function () {
+  localStorage.removeItem("endroit", "twist");
+  goToChapter("debut");
+});
