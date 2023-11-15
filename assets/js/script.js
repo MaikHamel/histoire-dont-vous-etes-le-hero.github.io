@@ -26,7 +26,7 @@ const chapters = {
   entrer: {
     titre: "La taverne",
     description:
-      "Vous décidez d'entrer à l'intérieur de la taverne. L'intérieur de la taverne est grand: le coté droite contient une vingtaines de tables qui tous occupées et à la gauche, il y a un bar avec un comptoir pouvant accueillir une trentaine de personnes. En avancant tranquillement dans la taverne, vous voyez une paire de dagues trainant dans un coin ",
+      "Vous décidez d'entrer à l'intérieur de la taverne. L'intérieur de la taverne est grande: le coté droit contient une vingtaines de tables qui sont tous occupées et à la gauche, il y a un bar avec un comptoir pouvant accueillir une trentaine de personnes. En avancant tranquillement dans la taverne, vous voyez une paire de dagues trainant dans un coin ",
     image: "./assets/images/chapitre3(entrer).png",
     sons: "./assets/son/porte.mp3",
     musique: "assets/musique/musik-bauern-142722.mp3",
@@ -98,7 +98,7 @@ const chapters = {
   chambre: {
     titre: "Arrivé à la chambre",
     description:
-      "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
+      "Arrivé à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
     image: "./assets/images/chapitre8(chambre).jpg",
 
     boutons: [
@@ -275,7 +275,7 @@ function goToChapter(chapitre) {
         chapters.chambre = {
           titre: "Arrivé à la chambre",
           description:
-            "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
+            "Arrivé à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
           image: "./assets/images/chapitre8(chambre).jpg",
           sons: "./assets/son/clothes-drop-2-40202.mp3",
           musique: "assets/musique/silent-worlds-ambient-soundscape-110183.mp3",
@@ -290,7 +290,7 @@ function goToChapter(chapitre) {
         chapters.chambre = {
           titre: "Arrivé à la chambre",
           description:
-            "Arrivée à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
+            "Arrivé à la chambre du roi, vous décidez d'entrer à l'intérieur. Le roi est bien dans sa chambre et vous regarde d'une maniere arrogant et machiavélique, comme s'il savait que vous vienderiez. Vous pouvez enfin acomplir votre mission. Avez vous les dagues ?",
           image: "./assets/images/chapitre8(chambre).jpg",
           sons: "./assets/son/clothes-drop-2-40202.mp3",
           musique: "assets/musique/silent-worlds-ambient-soundscape-110183.mp3",
