@@ -4,7 +4,7 @@ const chapters = {
   debut: {
     titre: "intro",
     description:
-      "Vous, une elfe, voulez vous venger du roi du royaume voisin pour avoir détruit votre village. Assoiffée de vegence, vous arrivez au royaume du roi. En vous promenant dans le gros village du royaume, vous voyez une taverne et trouvez que vous pourriez avoir des informations à l'intérieur",
+      "Vous, un elfe, voulez vous venger du roi du royaume voisin pour avoir détruit votre village. Assoiffé de vegence, vous arrivez au royaume du roi. En vous promenant dans le gros village du royaume, vous voyez une taverne et trouvez que vous pourriez avoir des informations à l'intérieur",
     image: "./assets/images/chapitre1(debut).jpg",
     musique: "assets/musique/the-britons-127687.mp3",
     boutons: [
@@ -120,7 +120,7 @@ const chapters = {
   reussite: {
     titre: "L'heure de la vengence",
     description:
-      "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder la poitrine. Après, vous vous enfuyez, satisfaite de votre vengence",
+      "L'heure de la vengence a sonné, vous utilisez vos deux dagues pour lui poignarder la poitrine. Après, vous vous enfuyez, satisfait de votre vengence",
     image: "./assets/images/chapitre10(reussite).png",
     sons: "./assets/son/short-choir-6116.mp3",
     musique: "assets/musique/wonderland-124601.mp3",
