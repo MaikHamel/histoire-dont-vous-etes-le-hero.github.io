@@ -125,6 +125,7 @@ button:hover {
   top: 0vh;
   display: flex;
   flex-direction: row;
+  margin-left: 0.5vh;
 }
 .progression:nth-child(2) {
   border-top-left-radius: 50px;
@@ -156,7 +157,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #2f2f66;
 }
 .perso {
   height: 4.1vh;
@@ -164,6 +164,15 @@ button:hover {
 }
 .photo {
   background-color: antiquewhite;
+}
+.choix {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  background-color: #35355f;
+  height: 700px;
+  width: 700px;
+  border-radius: 1%;
 }
 
 @media screen and (min-width: 600px) and (max-width: 700px) {
