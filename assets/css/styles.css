@@ -212,13 +212,31 @@ button:hover {
 }
 .imageperso {
   background-color: #535385;
+  border-radius: 2vh;
   width: 30vh;
   height: 30vh;
 }
 .classementperso {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   height: 8vh;
   width: 70vh;
   background-color: #3d3d64;
+}
+.sexe {
+  width: 10vh;
+  height: 3vh;
+  background-color: #33424d;
+  margin: 1%;
+  border-radius: 25px;
+  box-shadow: 2px 3px 2px #060913;
+  font-family: Verdana;
+  color: #d7ddea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .containerbouton {
   display: flex;
@@ -250,6 +268,9 @@ button:hover {
   }
   .titremenu {
     font-size: 60px;
+  }
+  .displayimage {
+    height: 80vh;
   }
 }
 
@@ -298,5 +319,8 @@ button:hover {
   }
   .titremenu {
     font-size: 50px;
+  }
+  .displayimage {
+    height: 80vh;
   }
 }

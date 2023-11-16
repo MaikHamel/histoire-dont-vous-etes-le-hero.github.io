@@ -278,8 +278,6 @@ function goToChapter(chapitre) {
       ambiance.loop = true;
     }
 
-    // musique qui continue
-
     // ajout sons
     if (chapters[chapitre].sons) {
       audio.src = chapters[chapitre].sons;
