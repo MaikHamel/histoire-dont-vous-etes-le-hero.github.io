@@ -139,9 +139,30 @@ button:hover {
 .progression {
   align-self: flex-end;
   margin-bottom: 1vh;
-  width: 4.5vh;
+  width: 4.1vh;
   height: 1.2vh;
   background-color: rgb(26, 21, 58);
+}
+
+.couleur {
+  background-color: #f0e5f3;
+}
+
+.personnage {
+  position: absolute;
+  width: 25vh;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2f2f66;
+}
+.perso {
+  height: 4.1vh;
+  width: 4.1vh;
+}
+.photo {
+  background-color: antiquewhite;
 }
 
 @media screen and (max-width: 600px) {
@@ -192,8 +213,4 @@ button:hover {
     height: 800px;
     width: 500px;
   }
-}
-
-.couleur {
-  background-color: #f0e5f3;
 }

@@ -139,6 +139,7 @@ const audio = document.createElement("audio");
 const ambiance = document.createElement("audio");
 const boutonDebut = document.getElementById("boutonDebut");
 let barre = document.querySelectorAll(".progression");
+let charac = document.querySelectorAll(".perso");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -150,6 +151,57 @@ function goToChapter(chapitre) {
 
     // local storage pour les chapitre
     localStorage.setItem("endroit", chapitre);
+
+    // image du personnage
+    if (chapters[chapitre] == chapters.debut) {
+      charac[0].classList.add("photo");
+    } else {
+      charac[0].classList.remove("photo");
+    }
+
+    if (
+      chapters[chapitre] == chapters.entrer ||
+      chapters[chapitre] == chapters.bandits
+    ) {
+      charac[1].classList.add("photo");
+    } else {
+      charac[1].classList.remove("photo");
+    }
+
+    if (
+      chapters[chapitre] == chapters.arme ||
+      chapters[chapitre] == chapters.pasarme
+    ) {
+      charac[2].classList.add("photo");
+    } else {
+      charac[2].classList.remove("photo");
+    }
+
+    if (
+      chapters[chapitre] == chapters.informations ||
+      chapters[chapitre] == chapters.intimidation
+    ) {
+      charac[3].classList.add("photo");
+    } else {
+      charac[3].classList.remove("photo");
+    }
+
+    if (
+      chapters[chapitre] == chapters.chambre ||
+      chapters[chapitre] == chapters.soldat
+    ) {
+      charac[4].classList.add("photo");
+    } else {
+      charac[4].classList.remove("photo");
+    }
+    if (
+      chapters[chapitre] == chapters.reussite ||
+      chapters[chapitre] == chapters.echec
+    ) {
+      charac[5].classList.add("photo");
+    } else {
+      charac[5].classList.remove("photo");
+    }
 
     //barre progression
 
