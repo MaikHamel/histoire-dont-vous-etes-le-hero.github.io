@@ -166,13 +166,44 @@ button:hover {
   background-color: antiquewhite;
 }
 .choix {
-  display: none;
   z-index: 2;
   position: absolute;
   background-color: #35355f;
-  height: 700px;
+  height: 710px;
   width: 700px;
   border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.containermenu {
+  height: 10vh;
+  /*
+  background-color: rgb(48, 59, 68);
+  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.titremenu {
+  font-family: "Dungeon";
+  font-size: 70px;
+  font-weight: 100;
+  color: #f0e5f3;
+  text-shadow: 5px 5px 2px #060913;
+  height: 15vh;
+}
+.containerimage {
+  height: 80vh;
+  background-color: palevioletred;
+}
+.containerbouton {
+  display: flex;
+  height: 10vh;
+  /*
+  background-color: rgb(81, 143, 194);
+  */
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media screen and (min-width: 600px) and (max-width: 700px) {
@@ -187,6 +218,13 @@ button:hover {
   }
   .progression {
     margin-bottom: 2vh;
+  }
+  .choix {
+    height: 800px;
+    width: 500px;
+  }
+  .titremenu {
+    font-size: 60px;
   }
 }
 
@@ -228,5 +266,12 @@ button:hover {
   }
   .progression {
     margin-bottom: 3vh;
+  }
+  .choix {
+    height: 900px;
+    width: 68vh;
+  }
+  .titremenu {
+    font-size: 50px;
   }
 }

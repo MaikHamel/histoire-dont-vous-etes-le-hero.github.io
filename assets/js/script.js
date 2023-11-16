@@ -140,6 +140,7 @@ const ambiance = document.createElement("audio");
 const boutonDebut = document.getElementById("boutonDebut");
 let barre = document.querySelectorAll(".progression");
 let charac = document.querySelectorAll(".perso");
+const choix = document.getElementById("choix");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
