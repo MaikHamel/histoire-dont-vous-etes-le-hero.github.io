@@ -165,6 +165,21 @@ button:hover {
   background-color: antiquewhite;
 }
 
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .jeu {
+    height: 800px;
+    width: 500px;
+  }
+  .progression {
+    margin-bottom: 2vh;
+  }
+}
+
 @media screen and (max-width: 600px) {
   body {
     height: 100vh;
@@ -201,16 +216,7 @@ button:hover {
   button {
     display: block;
   }
-}
-
-@media screen and (min-width: 600px) and (max-width: 700px) {
-  body {
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
-  .jeu {
-    height: 800px;
-    width: 500px;
+  .progression {
+    margin-bottom: 3vh;
   }
 }
