@@ -220,6 +220,7 @@ button:hover {
   align-items: center;
 }
 .imageperso {
+  overflow: hidden;
   background-color: #535385;
 
   border-radius: 2vh;

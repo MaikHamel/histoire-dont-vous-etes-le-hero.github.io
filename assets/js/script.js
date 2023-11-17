@@ -485,7 +485,7 @@ function goToChapter(chapitre) {
     }
     if (homme.click == true) {
     }
-
+    /*
     persotous.forEach((element) => {
       tous.classList.add("sexeselect");
       let img = document.createElement("img");
@@ -495,13 +495,13 @@ function goToChapter(chapitre) {
       img.classList.add("containersquareimage");
       containerimage.style.justifyContent = "center";
       img.addEventListener("click", function () {
-        /*
+        img.style.border = "#f0e5f3 solid";
         let imageshow = document.createElement("img");
         imageperso.appendChild(imageshow);
         imageshow.src = img.src;
-        */
       });
     });
+    */
 
     // click des bouton pour les personnages
     tous.addEventListener("click", function () {
@@ -515,10 +515,15 @@ function goToChapter(chapitre) {
         img.src = element;
         img.classList.add("containersquareimage");
         containerimage.style.justifyContent = "center";
-        img.addEventListener("click", function () {});
+        img.addEventListener("click", function () {
+          let imageshow = document.createElement("img");
+          imageperso.appendChild(imageshow);
+          imageshow.src = img.src;
+          img.style.border = "#f0e5f3 solid";
+        });
       });
     });
-    /*
+
     homme.addEventListener("click", function () {
       homme.classList.add("sexeselect");
       femme.classList.remove("sexeselect");
@@ -530,6 +535,12 @@ function goToChapter(chapitre) {
         img1.src = element;
         img1.classList.add("containersquareimage");
         containerimage.style.justifyContent = "center";
+        img1.addEventListener("click", function () {
+          img1.style.border = "#f0e5f3 solid";
+          let imageshow = document.createElement("img");
+          imageperso.appendChild(imageshow);
+          imageshow.src = img1.src;
+        });
       });
     });
 
@@ -544,9 +555,15 @@ function goToChapter(chapitre) {
         img2.src = element;
         img2.classList.add("containersquareimage");
         containerimage.style.justifyContent = "center";
+        img2.addEventListener("click", function () {
+          img2.style.border = "#f0e5f3 solid";
+          let imageshow = document.createElement("img");
+          imageperso.appendChild(imageshow);
+          imageshow.src = img2.src;
+        });
       });
     });
-    */
+
     //bouton confirmer
     boutonimage.addEventListener("click", function () {
       choix.style.display = "none";
