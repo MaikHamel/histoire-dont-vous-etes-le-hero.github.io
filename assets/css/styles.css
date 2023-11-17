@@ -194,7 +194,8 @@ button:hover {
 }
 .containerimage {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   height: 62vh;
   width: 55vh;
   background-color: #24243a;
@@ -237,6 +238,16 @@ button:hover {
   width: 55vh;
   background-color: #3d3d64;
 }
+.containersquareimage {
+  width: 15vh;
+  height: 15vh;
+  border: #30304f solid;
+  border-radius: 1vh;
+}
+.containersquareimage:hover {
+  border: #f0e5f3 solid;
+}
+
 .sexe {
   width: 10vh;
   height: 3vh;

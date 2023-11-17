@@ -129,6 +129,10 @@ const chapters = {
   },
 };
 
+//array personnage
+
+let persotous = [];
+
 // placemnets des informations dans javascript
 let titre = document.querySelector(".titre");
 let description = document.querySelector(".paragraphe");
