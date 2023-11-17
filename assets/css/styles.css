@@ -254,6 +254,7 @@ button:hover {
 }
 
 .sexe {
+  user-select: none;
   width: 10vh;
   height: 3vh;
   background-color: #33424d;
@@ -385,4 +386,8 @@ button:hover {
   .displayimage {
     height: 80vh;
   }
+}
+
+.hidden {
+  display: none;
 }
