@@ -221,6 +221,7 @@ button:hover {
 }
 .imageperso {
   overflow: hidden;
+
   background-color: #535385;
 
   border-radius: 2vh;
@@ -251,6 +252,12 @@ button:hover {
 }
 .containersquareimage:hover {
   border: #f0e5f3 solid;
+}
+.containersquareimageselect {
+  border: #f0e5f3 solid;
+}
+.containersquareimageunselect {
+  border: #30304f solid;
 }
 
 .sexe {

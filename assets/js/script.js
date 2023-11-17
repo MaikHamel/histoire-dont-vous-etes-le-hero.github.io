@@ -524,7 +524,7 @@ let femme = document.getElementById("femme");
 let containerimage = document.getElementById("containerimage");
 let imageperso = document.getElementById("imageperso");
 let boutonimage = document.getElementById("boutonimage");
-
+let imageafficher = document.getElementById("imageafficher");
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
     titre.innerHTML = chapters[chapitre].titre;
@@ -536,9 +536,18 @@ function goToChapter(chapitre) {
     // local storage pour les chapitre
     localStorage.setItem("endroit", chapitre);
 
+    /*
+    height: 4.1vh;
+    width: 4.1vh;
+    */
+
     // image du personnage
     if (chapters[chapitre] == chapters.debut) {
       charac[0].classList.add("photo");
+      let imglogo = document.createElement("img");
+      imglogo.setAttribute("class", "imagelogo");
+      charac[0].appendChild(imglogo);
+      imglogo.src = persotous.url;
     } else {
       charac[0].classList.remove("photo");
     }
@@ -548,6 +557,10 @@ function goToChapter(chapitre) {
       chapters[chapitre] == chapters.bandits
     ) {
       charac[1].classList.add("photo");
+      let imglogo = document.createElement("img");
+      imglogo.setAttribute("class", "imagelogo");
+      charac[1].appendChild(imglogo);
+      imglogo.src = persotous.url;
     } else {
       charac[1].classList.remove("photo");
     }
@@ -557,6 +570,10 @@ function goToChapter(chapitre) {
       chapters[chapitre] == chapters.pasarme
     ) {
       charac[2].classList.add("photo");
+      let imglogo = document.createElement("img");
+      imglogo.setAttribute("class", "imagelogo");
+      charac[2].appendChild(imglogo);
+      imglogo.src = persotous.url;
     } else {
       charac[2].classList.remove("photo");
     }
@@ -566,6 +583,10 @@ function goToChapter(chapitre) {
       chapters[chapitre] == chapters.intimidation
     ) {
       charac[3].classList.add("photo");
+      let imglogo = document.createElement("img");
+      imglogo.setAttribute("class", "imagelogo");
+      charac[3].appendChild(imglogo);
+      imglogo.src = persotous.url;
     } else {
       charac[3].classList.remove("photo");
     }
@@ -575,6 +596,10 @@ function goToChapter(chapitre) {
       chapters[chapitre] == chapters.soldat
     ) {
       charac[4].classList.add("photo");
+      let imglogo = document.createElement("img");
+      imglogo.setAttribute("class", "imagelogo");
+      charac[4].appendChild(imglogo);
+      imglogo.src = persotous.url;
     } else {
       charac[4].classList.remove("photo");
     }
@@ -583,6 +608,10 @@ function goToChapter(chapitre) {
       chapters[chapitre] == chapters.echec
     ) {
       charac[5].classList.add("photo");
+      let imglogo = document.createElement("img");
+      imglogo.setAttribute("class", "imagelogo");
+      charac[5].appendChild(imglogo);
+      imglogo.src = persotous.url;
     } else {
       charac[5].classList.remove("photo");
     }
@@ -661,27 +690,29 @@ function goToChapter(chapitre) {
       ambiance.loop = true;
     }
 
+    //afficher  images personnages
     persotous.forEach((element) => {
       tous.classList.add("sexeselect");
       let img = document.createElement("img");
       img.setAttribute("class", "imagecharacter");
-      /*
-      if (element.sexe == "femme") {
-        img.setAttribute("class", "female");
-      }
-      if (element.sexe == "homme") {
-        img.setAttribute("class", "male");
-      }
-      */
+
       containerimage.appendChild(img);
       img.src = element.url;
       img.classList.add("containersquareimage");
       containerimage.style.justifyContent = "center";
+
+      //contour rose lorsque le personnage est select
       img.addEventListener("click", function () {
-        img.style.border = "#f0e5f3 solid";
-        let imageshow = document.createElement("img");
-        imageperso.appendChild(imageshow);
-        imageshow.src = img.src;
+        let imageselect = document.querySelector(".containersquareimageselect");
+
+        if (imageselect) {
+          imageselect.classList.remove("containersquareimageselect");
+        }
+
+        // personnage affiche lorsque le logo est choisi
+        imageafficher.src = img.src;
+
+        img.classList.add("containersquareimageselect");
       });
       homme.addEventListener("click", function () {
         img.classList.remove("hidden");
@@ -710,6 +741,9 @@ function goToChapter(chapitre) {
         femme.classList.remove("sexeselect");
         homme.classList.remove("sexeselect");
         femme.classList.add("sexselect");
+      });
+      boutonimage.addEventListener("click", function () {
+        choix.style.display = "none";
       });
     });
 
@@ -793,9 +827,6 @@ function goToChapter(chapitre) {
     });
     */
     //bouton confirmer
-    boutonimage.addEventListener("click", function () {
-      choix.style.display = "none";
-    });
 
     // ajout sons
     if (chapters[chapitre].sons) {
