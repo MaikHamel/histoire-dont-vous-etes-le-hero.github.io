@@ -169,7 +169,7 @@ button:hover {
   z-index: 2;
   position: absolute;
   background-color: #35355f;
-  height: 710px;
+  height: 720px;
   width: 700px;
   border-radius: 1%;
   display: flex;
@@ -195,26 +195,38 @@ button:hover {
 .containerimage {
   display: flex;
   flex-direction: row;
-  height: 80vh;
+  height: 62vh;
+  width: 55vh;
   background-color: #24243a;
+
   /*
   background-color: palevioletred;
   */
   justify-content: flex-end;
 }
+
 .displayimage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 70vh;
-  width: 30vh;
+  width: 35vh;
   background-color: #2b2b47;
+  align-items: center;
 }
 .imageperso {
   background-color: #535385;
+
   border-radius: 2vh;
   width: 30vh;
   height: 30vh;
+}
+.containerpersoimage {
+  display: flex;
+  flex-direction: row;
+}
+.containermenuimage {
+  height: 70vh;
 }
 .classementperso {
   display: flex;
@@ -222,7 +234,7 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   height: 8vh;
-  width: 70vh;
+  width: 55vh;
   background-color: #3d3d64;
 }
 .sexe {
@@ -272,6 +284,19 @@ button:hover {
   .displayimage {
     height: 80vh;
   }
+  .classementperso {
+    width: 30vh;
+  }
+  .containerimage {
+    height: 70vh;
+    width: 30vh;
+  }
+  .containermenuimage {
+    width: 30vh;
+  }
+  .displayimage {
+    height: 78vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -319,6 +344,19 @@ button:hover {
   }
   .titremenu {
     font-size: 50px;
+  }
+  .displayimage {
+    height: 80vh;
+  }
+  .classementperso {
+    width: 35vh;
+  }
+  .containermenuimage {
+    width: 35vh;
+  }
+  .containerimage {
+    height: 72vh;
+    width: 35vh;
   }
   .displayimage {
     height: 80vh;
