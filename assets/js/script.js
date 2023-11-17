@@ -670,4 +670,5 @@ if (localStorage == undefined) {
 boutonDebut.addEventListener("click", function () {
   localStorage.removeItem("endroit", "twist");
   goToChapter("debut");
+  choix.style.display = "flex";
 });
