@@ -193,6 +193,7 @@ button:hover {
   height: 15vh;
 }
 .containerimage {
+  overflow-y: scroll;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -204,6 +205,9 @@ button:hover {
   background-color: palevioletred;
   */
   justify-content: flex-end;
+}
+.containerimage::-webkit-scrollbar {
+  display: none;
 }
 
 .displayimage {
@@ -260,6 +264,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.sexe:hover {
+  background-color: #fae0f4;
+  color: #524459;
+}
+.sexeselect {
+  background-color: #fae0f4;
+  color: #524459;
 }
 .containerbouton {
   display: flex;

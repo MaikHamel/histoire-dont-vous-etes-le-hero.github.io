@@ -227,6 +227,104 @@ let persotous = [
   "assets/personnages/tous/Icon1_scaled_8x_pngcrushed.png",
 ];
 
+let persohomme = [
+  "assets/personnages/homme/Icon46_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon45_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon39_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon38_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon36_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon35_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon33_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon27_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon23_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon22_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon21_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon19_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon18_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon17_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon15_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon13_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon12_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon11_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon9_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon5_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon3_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon1_scaled_4x_pngcrushed.png",
+  "assets/personnages/homme/Icon47_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon44_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon43_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon42_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon40_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon39_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon38_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon37_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon36_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon35_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon32_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon31_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon29_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon26_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon25_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon21_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon20_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon19_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon17_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon15_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon12_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon11_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon9_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon8_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon6_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon5_scaled_8x_pngcrushed.png",
+  "assets/personnages/homme/Icon4_scaled_8x_pngcrushed.png",
+];
+
+let persofemme = [
+  "assets/personnages/femme/Icon48_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon44_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon43_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon42_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon41_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon40_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon37_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon32_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon31_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon30_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon29_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon28_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon26_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon25_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon24_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon20_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon16_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon14_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon10_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon8_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon7_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon6_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon4_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon2_scaled_4x_pngcrushed.png",
+  "assets/personnages/femme/Icon48_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon46_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon45_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon41_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon34_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon33_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon30_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon28_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon27_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon24_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon23_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon22_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon18_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon16_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon14_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon13_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon10_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon7_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon3_scaled_8x_pngcrushed.png",
+  "assets/personnages/femme/Icon1_scaled_8x_pngcrushed.png",
+];
 // placemnets des informations dans javascript
 let titre = document.querySelector(".titre");
 let description = document.querySelector(".paragraphe");
@@ -239,6 +337,12 @@ const boutonDebut = document.getElementById("boutonDebut");
 let barre = document.querySelectorAll(".progression");
 let charac = document.querySelectorAll(".perso");
 const choix = document.getElementById("choix");
+let tous = document.getElementById("tous");
+let homme = document.getElementById("homme");
+let femme = document.getElementById("femme");
+let containerimage = document.getElementById("containerimage");
+let imageperso = document.getElementById("imageperso");
+let boutonimage = document.getElementById("boutonimage");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -375,6 +479,78 @@ function goToChapter(chapitre) {
       ambiance.play();
       ambiance.loop = true;
     }
+
+    if (tous.click == true) {
+      console.log("allo");
+    }
+    if (homme.click == true) {
+    }
+
+    persotous.forEach((element) => {
+      tous.classList.add("sexeselect");
+      let img = document.createElement("img");
+      img.setAttribute("class", "imagecharacter");
+      containerimage.appendChild(img);
+      img.src = element;
+      img.classList.add("containersquareimage");
+      containerimage.style.justifyContent = "center";
+      img.addEventListener("click", function () {
+        /*
+        let imageshow = document.createElement("img");
+        imageperso.appendChild(imageshow);
+        imageshow.src = img.src;
+        */
+      });
+    });
+
+    // click des bouton pour les personnages
+    tous.addEventListener("click", function () {
+      tous.classList.add("sexeselect");
+      homme.classList.remove("sexeselect");
+      femme.classList.remove("sexeselect");
+      persotous.forEach((element) => {
+        let img = document.createElement("img");
+        img.setAttribute("class", "imagecharacter");
+        containerimage.appendChild(img);
+        img.src = element;
+        img.classList.add("containersquareimage");
+        containerimage.style.justifyContent = "center";
+        img.addEventListener("click", function () {});
+      });
+    });
+    /*
+    homme.addEventListener("click", function () {
+      homme.classList.add("sexeselect");
+      femme.classList.remove("sexeselect");
+      tous.classList.remove("sexeselect");
+      persohomme.forEach((element) => {
+        let img1 = document.createElement("img");
+        img1.setAttribute("class", "imagecharacter");
+        containerimage.appendChild(img1);
+        img1.src = element;
+        img1.classList.add("containersquareimage");
+        containerimage.style.justifyContent = "center";
+      });
+    });
+
+    femme.addEventListener("click", function () {
+      femme.classList.add("sexeselect");
+      tous.classList.remove("sexeselect");
+      homme.classList.remove("sexeselect");
+      persofemme.forEach((element) => {
+        let img2 = document.createElement("img");
+        img2.setAttribute("class", "imagecharacter");
+        containerimage.appendChild(img2);
+        img2.src = element;
+        img2.classList.add("containersquareimage");
+        containerimage.style.justifyContent = "center";
+      });
+    });
+    */
+    //bouton confirmer
+    boutonimage.addEventListener("click", function () {
+      choix.style.display = "none";
+    });
 
     // ajout sons
     if (chapters[chapitre].sons) {
