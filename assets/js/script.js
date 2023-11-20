@@ -525,7 +525,14 @@ let containerimage = document.getElementById("containerimage");
 let imageperso = document.getElementById("imageperso");
 let boutonimage = document.getElementById("boutonimage");
 let imageafficher = document.getElementById("imageafficher");
+let img1 = document.getElementById("image1");
+let img2 = document.getElementById("image2");
+let img3 = document.getElementById("image3");
+let img4 = document.getElementById("image4");
+let img5 = document.getElementById("image5");
+let img6 = document.getElementById("image6");
 let persoimage = document.querySelectorAll(".persoimg");
+
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
     titre.innerHTML = chapters[chapitre].titre;
@@ -639,101 +646,13 @@ function goToChapter(chapitre) {
 
         imageafficher.src = img.src;
 
+        //affiche les images sur la barre de progression
+
         persoimage.forEach((pic) => {
           pic.src = imageafficher.src;
         });
 
-        /*
-        persoimage[0].src = imageafficher.src;
-        */
-        // image du personnage
-        if (chapters[chapitre] == chapters.debut) {
-        } else {
-          /*
-          charac[0].classList.remove("photo");
-          */
-        }
-
-        if (
-          chapters[chapitre] == chapters.entrer ||
-          chapters[chapitre] == chapters.bandits
-        ) {
-          persoimage[1].classList.add("cache");
-          persoimage[1].classList.remove("cache");
-          /*
-      charac[1].classList.add("photo");
-      let imglogo = document.createElement("img");
-      imglogo.setAttribute("class", "imagelogo");
-      imglogo.src = imageafficher.src;
-      charac[1].appendChild(imglogo);*/
-        } else {
-          /*
-          charac[1].classList.remove("photo");
-          */
-        }
-
-        if (
-          chapters[chapitre] == chapters.arme ||
-          chapters[chapitre] == chapters.pasarme
-        ) {
-          /*
-      charac[2].classList.add("photo");
-      let imglogo = document.createElement("img");
-      imglogo.setAttribute("class", "imagelogo");
-      imglogo.src = imageafficher.src;
-      charac[2].appendChild(imglogo);*/
-        } else {
-          /*
-          charac[2].classList.remove("photo");
-          */
-        }
-
-        if (
-          chapters[chapitre] == chapters.informations ||
-          chapters[chapitre] == chapters.intimidation
-        ) {
-          /*
-      charac[3].classList.add("photo");
-      let imglogo = document.createElement("img");
-      imglogo.setAttribute("class", "imagelogo");
-      imglogo.src = imageafficher.src;
-      charac[3].appendChild(imglogo);*/
-        } else {
-          /*
-          charac[3].classList.remove("photo");
-          */
-        }
-
-        if (
-          chapters[chapitre] == chapters.chambre ||
-          chapters[chapitre] == chapters.soldat
-        ) {
-          /*
-      charac[4].classList.add("photo");
-      let imglogo = document.createElement("img");
-      imglogo.setAttribute("class", "imagelogo");
-      imglogo.src = imageafficher.src;
-      charac[4].appendChild(imglogo);*/
-        } else {
-          /*
-          charac[4].classList.remove("photo");
-          */
-        }
-        if (
-          chapters[chapitre] == chapters.reussite ||
-          chapters[chapitre] == chapters.echec
-        ) {
-          /*
-      charac[5].classList.add("photo");
-      let imglogo = document.createElement("img");
-      imglogo.setAttribute("class", "imagelogo");
-      imglogo.src = imageafficher.src;
-      charac[5].appendChild(imglogo);*/
-        } else {
-          /*
-          charac[5].classList.remove("photo");
-          */
-        }
+        // met une bordure lorsqu'un personnage recoit le click
 
         img.classList.add("containersquareimageselect");
       });
@@ -742,7 +661,6 @@ function goToChapter(chapitre) {
         tous.classList.remove("sexeselect");
         homme.classList.add("sexeselect");
         femme.classList.remove("sexeselect");
-        femme.classList.remove("sexselect");
         if (element.sexe == "femme") {
           img.classList.add("hidden");
         }
@@ -752,7 +670,6 @@ function goToChapter(chapitre) {
         tous.classList.remove("sexeselect");
         homme.classList.remove("sexeselect");
         femme.classList.add("sexeselect");
-        femme.classList.add("sexselect");
         if (element.sexe == "homme") {
           img.classList.add("hidden");
         }
@@ -763,7 +680,6 @@ function goToChapter(chapitre) {
         tous.classList.add("sexeselect");
         femme.classList.remove("sexeselect");
         homme.classList.remove("sexeselect");
-        femme.classList.add("sexselect");
       });
       boutonimage.addEventListener("click", function () {
         containerimage.removeChild(img);
@@ -771,6 +687,75 @@ function goToChapter(chapitre) {
         imageafficher.src = "";
       });
     });
+
+    // image du personnage au dessu de la barre de progression
+    if (chapters[chapitre] == chapters.debut) {
+      img1.style.visibility = "visible";
+      img2.style.visibility = "hidden";
+      img3.style.visibility = "hidden";
+      img4.style.visibility = "hidden";
+      img5.style.visibility = "hidden";
+      img6.style.visibility = "hidden";
+    }
+
+    if (
+      chapters[chapitre] == chapters.entrer ||
+      chapters[chapitre] == chapters.bandits
+    ) {
+      img1.style.visibility = "hidden";
+      img2.style.visibility = "visible";
+      img3.style.visibility = "hidden";
+      img4.style.visibility = "hidden";
+      img5.style.visibility = "hidden";
+      img6.style.visibility = "hidden";
+    }
+
+    if (
+      chapters[chapitre] == chapters.arme ||
+      chapters[chapitre] == chapters.pasarme
+    ) {
+      img1.style.visibility = "hidden";
+      img2.style.visibility = "hidden";
+      img3.style.visibility = "visible";
+      img4.style.visibility = "hidden";
+      img5.style.visibility = "hidden";
+      img6.style.visibility = "hidden";
+    }
+
+    if (
+      chapters[chapitre] == chapters.informations ||
+      chapters[chapitre] == chapters.intimidation
+    ) {
+      img1.style.visibility = "hidden";
+      img2.style.visibility = "hidden";
+      img3.style.visibility = "hidden";
+      img4.style.visibility = "visible";
+      img5.style.visibility = "hidden";
+      img6.style.visibility = "hidden";
+    }
+
+    if (
+      chapters[chapitre] == chapters.chambre ||
+      chapters[chapitre] == chapters.soldat
+    ) {
+      img1.style.visibility = "hidden";
+      img2.style.visibility = "hidden";
+      img3.style.visibility = "hidden";
+      img4.style.visibility = "hidden";
+      img5.style.visibility = "visible";
+      img6.style.visibility = "hidden";
+    }
+    if (
+      chapters[chapitre] == chapters.reussite ||
+      chapters[chapitre] == chapters.echec
+    ) {
+      img1.style.visibility = "hidden";
+      img2.style.visibility = "hidden";
+      img3.style.visibility = "hidden";
+      img4.style.visibility = "hidden";
+      img5.style.visibility = "hidden";
+      img6.style.visibility = "visible";
+    }
 
     /*
     persotous.forEach((element) => {
@@ -851,7 +836,6 @@ function goToChapter(chapitre) {
       });
     });
     */
-    //bouton confirmer
 
     // ajout sons
     if (chapters[chapitre].sons) {
