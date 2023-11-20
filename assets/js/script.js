@@ -636,7 +636,9 @@ function goToChapter(chapitre) {
         }
 
         // personnage affiche lorsque le logo est choisi
+
         imageafficher.src = img.src;
+
         persoimage.forEach((pic) => {
           pic.src = imageafficher.src;
         });
@@ -656,6 +658,8 @@ function goToChapter(chapitre) {
           chapters[chapitre] == chapters.entrer ||
           chapters[chapitre] == chapters.bandits
         ) {
+          persoimage[1].classList.add("cache");
+          persoimage[1].classList.remove("cache");
           /*
       charac[1].classList.add("photo");
       let imglogo = document.createElement("img");
@@ -663,7 +667,9 @@ function goToChapter(chapitre) {
       imglogo.src = imageafficher.src;
       charac[1].appendChild(imglogo);*/
         } else {
+          /*
           charac[1].classList.remove("photo");
+          */
         }
 
         if (
@@ -677,7 +683,9 @@ function goToChapter(chapitre) {
       imglogo.src = imageafficher.src;
       charac[2].appendChild(imglogo);*/
         } else {
+          /*
           charac[2].classList.remove("photo");
+          */
         }
 
         if (
@@ -691,7 +699,9 @@ function goToChapter(chapitre) {
       imglogo.src = imageafficher.src;
       charac[3].appendChild(imglogo);*/
         } else {
+          /*
           charac[3].classList.remove("photo");
+          */
         }
 
         if (
@@ -705,7 +715,9 @@ function goToChapter(chapitre) {
       imglogo.src = imageafficher.src;
       charac[4].appendChild(imglogo);*/
         } else {
+          /*
           charac[4].classList.remove("photo");
+          */
         }
         if (
           chapters[chapitre] == chapters.reussite ||
@@ -718,7 +730,9 @@ function goToChapter(chapitre) {
       imglogo.src = imageafficher.src;
       charac[5].appendChild(imglogo);*/
         } else {
+          /*
           charac[5].classList.remove("photo");
+          */
         }
 
         img.classList.add("containersquareimageselect");
@@ -752,7 +766,9 @@ function goToChapter(chapitre) {
         femme.classList.add("sexselect");
       });
       boutonimage.addEventListener("click", function () {
+        containerimage.removeChild(img);
         choix.style.display = "none";
+        imageafficher.src = "";
       });
     });
 
@@ -956,4 +972,6 @@ boutonDebut.addEventListener("click", function () {
   localStorage.removeItem("endroit", "twist");
   goToChapter("debut");
   choix.style.display = "flex";
+  containerimage.appendChild(img);
+  imageafficher.src = img.src;
 });
