@@ -216,8 +216,20 @@ button:hover {
   justify-content: flex-end;
 }
 .containerimage::-webkit-scrollbar {
-  display: none;
+  background: #38385a;
 }
+.containerimage::-webkit-scrollbar-thumb {
+  background: #f0e5f3;
+  border-radius: 10vh;
+}
+.containerimage::-webkit-scrollbar-thumb:hover {
+  background: #cec4d0;
+}
+
+/*
+.containerimage::-webkit-scrollbar-button {
+  background: #1c1c3c;
+}*/
 
 .displayimage {
   display: flex;
