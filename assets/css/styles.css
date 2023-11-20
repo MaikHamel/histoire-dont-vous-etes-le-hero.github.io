@@ -43,6 +43,7 @@ body {
 }
 .boutonRecommencer {
   display: flex;
+  margin-top: 1vh;
   align-items: flex-end;
   flex-direction: column;
 }
