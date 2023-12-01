@@ -965,7 +965,7 @@ if (localStorage.getItem("endroit") == undefined) {
 //bouton renitialiser
 
 boutonDebut.addEventListener("click", function () {
-  localStorage.removeItem("endroit", "twist");
+  localStorage.removeItem("endroit");
   goToChapter("debut");
   choix.style.display = "flex";
 
