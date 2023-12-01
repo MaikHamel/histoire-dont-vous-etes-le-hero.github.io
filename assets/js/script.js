@@ -682,7 +682,6 @@ function goToChapter(chapitre) {
         homme.classList.remove("sexeselect");
       });
       boutonimage.addEventListener("click", function () {
-        containerimage.removeChild(img);
         choix.style.display = "none";
         imageafficher.src = "";
       });
@@ -877,8 +876,10 @@ function goToChapter(chapitre) {
     }
 
     //twist
-    let changement = "";
+    /*
     let twist = false;
+    */
+
     if (chapters[chapitre] == chapters.arme) {
       twist = true;
       if (twist == true) {
@@ -891,7 +892,10 @@ function goToChapter(chapitre) {
           musique: "assets/musique/silent-worlds-ambient-soundscape-110183.mp3",
           boutons: [{ titre: "Oui", destination: "reussite" }],
         };
+        localStorage.setItem("twist", twist);
+        /*
         changement = chapters[chapitre] = chapters.arme;
+        */
       }
     }
     if (chapters[chapitre] == chapters.pasarme) {
@@ -906,11 +910,14 @@ function goToChapter(chapitre) {
           musique: "assets/musique/silent-worlds-ambient-soundscape-110183.mp3",
           boutons: [{ titre: "Non", destination: "echec" }],
         };
+        localStorage.setItem("twist", twist);
+
+        /*
         changement = chapters[chapitre] = chapters.pasarme;
+        */
       }
     }
     // localstorage pour la twist
-    localStorage.setItem("twist", changement);
 
     // retrait des boutons pour créer des boutons a partir de javascript
     const containerbouton = document.querySelector(".option");
@@ -941,12 +948,16 @@ function goToChapter(chapitre) {
     console.log("mauvais cle de chapitre");
   }
 }
+
 // local storage
 
-if (localStorage == undefined) {
+if (localStorage.getItem("endroit") == undefined) {
   goToChapter("debut");
 } else {
   let endroit = localStorage.getItem("endroit", "twist");
+  /*
+  let suspense = localStorage.getItem("twist");
+  */
   goToChapter(`${endroit}`);
 }
 
@@ -956,6 +967,5 @@ boutonDebut.addEventListener("click", function () {
   localStorage.removeItem("endroit", "twist");
   goToChapter("debut");
   choix.style.display = "flex";
-  containerimage.appendChild(img);
   imageafficher.src = img.src;
 });
