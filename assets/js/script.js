@@ -954,7 +954,8 @@ function goToChapter(chapitre) {
 if (localStorage.getItem("endroit") == undefined) {
   goToChapter("debut");
 } else {
-  let endroit = localStorage.getItem("endroit", "twist");
+  let endroit = localStorage.getItem("endroit");
+
   /*
   let suspense = localStorage.getItem("twist");
   */
@@ -967,6 +968,7 @@ boutonDebut.addEventListener("click", function () {
   localStorage.removeItem("endroit", "twist");
   goToChapter("debut");
   choix.style.display = "flex";
+
   /*
   imageafficher.src = img.src;
   */
