@@ -967,5 +967,7 @@ boutonDebut.addEventListener("click", function () {
   localStorage.removeItem("endroit", "twist");
   goToChapter("debut");
   choix.style.display = "flex";
+  /*
   imageafficher.src = img.src;
+  */
 });
