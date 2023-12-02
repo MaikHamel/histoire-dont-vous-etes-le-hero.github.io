@@ -532,6 +532,7 @@ let img4 = document.getElementById("image4");
 let img5 = document.getElementById("image5");
 let img6 = document.getElementById("image6");
 let persoimage = document.querySelectorAll(".persoimg");
+let muted = document.querySelector("input[type=checkbox]");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -851,6 +852,16 @@ function goToChapter(chapitre) {
     video.setAttribute("class", "video");
     jeu.appendChild(video);
     */
+
+    muted.addEventListener("change", function () {
+      if (this.checked) {
+        audio.muted = true;
+        ambiance.muted = true;
+      } else {
+        audio.muted = false;
+        ambiance.muted = false;
+      }
+    });
 
     if (chapters[chapitre].video) {
       /*
