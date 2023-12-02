@@ -532,7 +532,7 @@ let img4 = document.getElementById("image4");
 let img5 = document.getElementById("image5");
 let img6 = document.getElementById("image6");
 let persoimage = document.querySelectorAll(".persoimg");
-let muted = document.querySelector("input[type=checkbox]");
+let muted = document.querySelector(".mute");
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -846,22 +846,20 @@ function goToChapter(chapitre) {
       audio.currentTime = 0;
     }
 
+    let Muted = localStorage.setItem("Muted", muted.checked == true);
+    audio.muted = Muted;
+    ambiance.muted = Muted;
+    muted.addEventListener("change", function () {
+      localStorage.getItem("Muted");
+      audio.muted = muted.checked;
+      ambiance.muted = muted.checked;
+    });
     // ajout des video
     /*
     let video = document.createElement("video");
     video.setAttribute("class", "video");
     jeu.appendChild(video);
     */
-
-    muted.addEventListener("change", function () {
-      if (this.checked) {
-        audio.muted = true;
-        ambiance.muted = true;
-      } else {
-        audio.muted = false;
-        ambiance.muted = false;
-      }
-    });
 
     if (chapters[chapitre].video) {
       /*
