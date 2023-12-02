@@ -51,15 +51,21 @@ body {
   height: 3vh;
 }
 .checkbox {
+  margin-right: 20vh;
   height: 35px;
-
   display: flex;
   align-items: center;
   flex-direction: row;
 }
+
 input[type="checkbox"] {
+  margin-left: 5px;
   width: 20px;
   height: 20px;
+}
+label {
+  font-family: Verdana;
+  color: #d7ddea;
 }
 
 .logo {
@@ -361,6 +367,10 @@ button:hover {
   .displayimage {
     height: 78vh;
   }
+
+  .checkbox {
+    margin-right: 10vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -424,6 +434,9 @@ button:hover {
   }
   .displayimage {
     height: 80vh;
+  }
+  .checkbox {
+    margin-right: 10vh;
   }
 }
 
