@@ -851,18 +851,15 @@ function goToChapter(chapitre) {
 
     muted.addEventListener("change", function () {
       if (muted.checked) {
-        mute = true;
-        localStorage.setItem("mute", "true");
-      } else {
-        mute = false;
-        localStorage.setItem("mute", "false");
-      }
-      if (mute == true) {
         audio.muted = true;
         ambiance.muted = true;
+        mute = true;
+        localStorage.setItem("mute", mute);
       } else {
         audio.muted = false;
         ambiance.muted = false;
+        mute = false;
+        localStorage.setItem("mute", mute);
       }
     });
 
@@ -983,7 +980,7 @@ if (localStorage.getItem("endroit") == undefined) {
   goToChapter(`${endroit}`);
   let sonmuet = localStorage.getItem("mute");
 
-  if (sonmuet === true) {
+  if (sonmuet === "true") {
     muted.checked = true;
     mute = true;
   } else {
