@@ -980,7 +980,7 @@ if (localStorage.getItem("endroit") == undefined) {
   goToChapter(`${endroit}`);
   let sonmuet = localStorage.getItem("mute");
 
-  if (sonmuet === "true") {
+  if (sonmuet === true) {
     muted.checked = true;
     mute = true;
   } else {
