@@ -369,7 +369,7 @@ button:hover {
   }
 
   .checkbox {
-    margin-right: 10vh;
+    margin-right: 5vh;
   }
 }
 
@@ -436,7 +436,11 @@ button:hover {
     height: 80vh;
   }
   .checkbox {
-    margin-right: 10vh;
+    margin-right: 5vh;
+  }
+  .boutonRecommencer {
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 
