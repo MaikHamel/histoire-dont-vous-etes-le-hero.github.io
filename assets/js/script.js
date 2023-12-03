@@ -854,12 +854,12 @@ function goToChapter(chapitre) {
         audio.muted = true;
         ambiance.muted = true;
         mute = true;
-        localStorage.setItem("mute", mute);
+        localStorage.setItem("mute", "true");
       } else {
         audio.muted = false;
         ambiance.muted = false;
         mute = false;
-        localStorage.setItem("mute", mute);
+        localStorage.setItem("mute", "false");
       }
     });
 
@@ -978,9 +978,10 @@ if (localStorage.getItem("endroit") == undefined) {
   let suspense = localStorage.getItem("twist");
   */
   goToChapter(`${endroit}`);
+
   let sonmuet = localStorage.getItem("mute");
 
-  if (sonmuet === true) {
+  if (mute === true || sonmuet === "true") {
     muted.checked = true;
     mute = true;
   } else {
