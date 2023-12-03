@@ -532,7 +532,8 @@ let img4 = document.getElementById("image4");
 let img5 = document.getElementById("image5");
 let img6 = document.getElementById("image6");
 let persoimage = document.querySelectorAll(".persoimg");
-let muted = document.querySelector(".mute");
+let muted = document.getElementById("mute");
+let mute = false;
 
 function goToChapter(chapitre) {
   if (chapters[chapitre]) {
@@ -846,14 +847,25 @@ function goToChapter(chapitre) {
       audio.currentTime = 0;
     }
 
-    let Muted = localStorage.setItem("Muted", muted.checked == true);
-    audio.muted = Muted;
-    ambiance.muted = Muted;
+    // bouton muet
+
     muted.addEventListener("change", function () {
-      localStorage.getItem("Muted");
-      audio.muted = muted.checked;
-      ambiance.muted = muted.checked;
+      if (muted.checked) {
+        mute = true;
+        localStorage.setItem("mute", "true");
+      } else {
+        mute = false;
+        localStorage.setItem("mute", "false");
+      }
+      if (mute == true) {
+        audio.muted = true;
+        ambiance.muted = true;
+      } else {
+        audio.muted = false;
+        ambiance.muted = false;
+      }
     });
+
     // ajout des video
     /*
     let video = document.createElement("video");
@@ -969,12 +981,23 @@ if (localStorage.getItem("endroit") == undefined) {
   let suspense = localStorage.getItem("twist");
   */
   goToChapter(`${endroit}`);
+  let sonmuet = localStorage.getItem("mute");
+
+  if (sonmuet === true) {
+    muted.checked = true;
+    mute = true;
+  } else {
+    muted.checked = false;
+    mute = false;
+  }
 }
 
 //bouton renitialiser
 
 boutonDebut.addEventListener("click", function () {
   localStorage.removeItem("endroit");
+  muted.checked = false;
+  mute = false;
   goToChapter("debut");
   choix.style.display = "flex";
 
