@@ -994,9 +994,6 @@ if (localStorage.getItem("endroit") == undefined) {
 
 boutonDebut.addEventListener("click", function () {
   localStorage.removeItem("endroit");
-  muted.checked = false;
-  audio.muted = false;
-  ambiance.muted = false;
   goToChapter("debut");
   choix.style.display = "flex";
 
