@@ -357,7 +357,7 @@ button:hover {
     width: 40vh;
   }
   .displayimage {
-    width: 30vh;
+    width: 40vh;
   }
   .imageperso {
     width: 25vh;
@@ -368,7 +368,7 @@ button:hover {
     height: 25vh;
   }
   .choix {
-    width: 85vh;
+    width: 80vh;
     height: 92vh;
   }
 }
