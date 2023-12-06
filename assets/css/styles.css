@@ -354,6 +354,10 @@ button:hover {
     width: 25vh;
     height: 25vh;
   }
+  #imageafficher {
+    width: 25vh;
+    height: 25vh;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
