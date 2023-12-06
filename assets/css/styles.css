@@ -329,6 +329,11 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 2000px) {
+  .jeu {
+    width: 1000px;
+  }
+}
 
 @media screen and (min-height: 900px) and (max-height: 2000px) {
   .checkbox {
