@@ -194,7 +194,7 @@ button:hover {
   z-index: 2;
   position: absolute;
   background-color: #35355f;
-  min-height: 800px;
+  min-height: 820px;
   width: 700px;
   border-radius: 1%;
   display: flex;
@@ -330,7 +330,33 @@ button:hover {
   justify-content: center;
 }
 
-@media screen and (min-width: 600px) and (max-width: 700px) {
+@media screen and (min-height: 900px) and (max-height: 2000px) {
+  .checkbox {
+    margin-right: 5vh;
+  }
+  .boutonRecommencer {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-height: 900px) and (max-height: 2000px) {
+  .containerimage {
+    width: 27.5vh;
+  }
+  .classementperso {
+    width: 27.5vh;
+  }
+  .displayimage {
+    width: 26.5vh;
+  }
+  .imageperso {
+    width: 25vh;
+    height: 25vh;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
   body {
     height: 100vh;
     justify-content: center;
@@ -344,7 +370,7 @@ button:hover {
     margin-bottom: 2vh;
   }
   .choix {
-    height: 800px;
+    min-height: 800px;
     width: 500px;
   }
   .titremenu {
@@ -377,7 +403,7 @@ button:hover {
     height: 100vh;
   }
   .jeu {
-    min-height: 900px;
+    height: 900px;
     width: auto;
     display: block;
     text-align: center;
