@@ -32,7 +32,7 @@ body {
   position: relative;
   background-color: #35355f;
   min-height: 700px;
-  width: 700px;
+  width: 800px;
   /*width: 100vh;
   height: 80vh;*/
   display: flex;
@@ -195,7 +195,7 @@ button:hover {
   position: absolute;
   background-color: #35355f;
   min-height: 820px;
-  width: 700px;
+  width: 800px;
   border-radius: 1%;
   display: flex;
   flex-direction: column;
@@ -252,7 +252,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   height: 70vh;
-  width: 35vh;
+  width: 45vh;
   background-color: #2b2b47;
   align-items: center;
 }
