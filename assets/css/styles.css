@@ -344,7 +344,7 @@ button:hover {
     margin-bottom: 2vh;
   }
   .choix {
-    min-height: 800px;
+    height: 800px;
     width: 500px;
   }
   .titremenu {
