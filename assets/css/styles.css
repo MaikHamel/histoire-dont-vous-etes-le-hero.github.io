@@ -31,7 +31,7 @@ body {
 .jeu {
   position: relative;
   background-color: #35355f;
-  height: 700px;
+  min-height: 700px;
   width: 700px;
   /*width: 100vh;
   height: 80vh;*/
@@ -331,9 +331,6 @@ button:hover {
   justify-content: center;
 }
 
-@media screen and (min-width: 700px) {
-}
-
 @media screen and (min-width: 600px) and (max-width: 700px) {
   body {
     height: 100vh;
@@ -341,7 +338,7 @@ button:hover {
     align-items: center;
   }
   .jeu {
-    height: 800px;
+    min-height: 800px;
     width: 500px;
   }
   .progression {
@@ -381,7 +378,7 @@ button:hover {
     height: 100vh;
   }
   .jeu {
-    height: 900px;
+    min-height: 900px;
     width: auto;
     display: block;
     text-align: center;
