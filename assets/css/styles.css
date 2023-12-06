@@ -202,7 +202,6 @@ button:hover {
 }
 .containermenu {
   height: 10vh;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -378,7 +377,7 @@ button:hover {
     height: 100vh;
   }
   .jeu {
-    min-height: 900px;
+    height: 900px;
     width: auto;
     display: block;
     text-align: center;
@@ -413,7 +412,7 @@ button:hover {
     margin-bottom: 3vh;
   }
   .choix {
-    min-height: 900px;
+    height: 900px;
     width: 68vh;
   }
   .titremenu {
