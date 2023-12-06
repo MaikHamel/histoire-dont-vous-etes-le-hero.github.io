@@ -345,7 +345,7 @@ button:hover {
   }
 
   .jeu {
-    width: 1000px;
+    width: 1050px;
   }
 }
 
@@ -368,8 +368,8 @@ button:hover {
     height: 25vh;
   }
   .choix {
-    width: 80vh;
-    height: 92vh;
+    width: 88.9vh;
+    height: 95vh;
   }
 }
 
