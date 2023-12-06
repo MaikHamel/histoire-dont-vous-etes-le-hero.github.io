@@ -194,7 +194,7 @@ button:hover {
   z-index: 2;
   position: absolute;
   background-color: #35355f;
-  height: 720px;
+  min-height: 800px;
   width: 700px;
   border-radius: 1%;
   display: flex;
@@ -345,7 +345,7 @@ button:hover {
     margin-bottom: 2vh;
   }
   .choix {
-    height: 800px;
+    min-height: 800px;
     width: 500px;
   }
   .titremenu {
@@ -413,7 +413,7 @@ button:hover {
     margin-bottom: 3vh;
   }
   .choix {
-    height: 900px;
+    min-height: 900px;
     width: 68vh;
   }
   .titremenu {
