@@ -345,10 +345,7 @@ button:hover {
   }
 
   .jeu {
-    width: 900px;
-  }
-  .choix {
-    width: 75vh;
+    width: 1000px;
   }
 }
 
@@ -360,7 +357,7 @@ button:hover {
     width: 40vh;
   }
   .displayimage {
-    width: 30vh;
+    width: 40vh;
   }
   .imageperso {
     width: 25vh;
@@ -369,6 +366,10 @@ button:hover {
   #imageafficher {
     width: 25vh;
     height: 25vh;
+  }
+  .choix {
+    width: 85vh;
+    height: 92vh;
   }
 }
 
