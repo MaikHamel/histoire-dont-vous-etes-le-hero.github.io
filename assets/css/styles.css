@@ -194,7 +194,7 @@ button:hover {
   z-index: 2;
   position: absolute;
   background-color: #35355f;
-  min-height: 820px;
+  min-height: 830px;
   width: 800px;
   border-radius: 1%;
   display: flex;
@@ -345,7 +345,7 @@ button:hover {
   }
 
   .jeu {
-    width: 1050px;
+    width: 900px;
   }
 }
 
